@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">Neo-Human Alliance sigil</title>
+  <g fill="none" stroke="oklch(0.75 0.09 140)" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="60" cy="60" r="46" stroke-width="2" opacity=".45"/>
+    <circle cx="60" cy="60" r="33" stroke-width="1" opacity=".3"/>
+    <path d="M60 17 75 47 105 60 75 73 60 103 45 73 15 60 45 47Z" stroke-width="3"/>
+    <path d="M60 30v60M30 60h60" stroke-width="1" opacity=".65"/>
+    <circle cx="60" cy="60" r="8" stroke-width="3"/>
+  </g>
+</svg>
