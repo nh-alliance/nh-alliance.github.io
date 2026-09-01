@@ -47,17 +47,84 @@ nav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
-document.querySelectorAll("[data-place]").forEach((point) => {
-  point.addEventListener("click", () => {
-    const place = places[point.dataset.place];
-    if (!place) return;
+/* The world map. Present on the home page only. */
+const placeCode = document.querySelector("[data-place-code]");
+const placeName = document.querySelector("[data-place-name]");
+const placeCopy = document.querySelector("[data-place-copy]");
+const placePoints = document.querySelectorAll("[data-place]");
 
-    document.querySelectorAll("[data-place]").forEach((item) => item.classList.remove("is-active"));
-    point.classList.add("is-active");
-    document.querySelector("[data-place-code]").textContent = place.code;
-    document.querySelector("[data-place-name]").textContent = place.name;
-    document.querySelector("[data-place-copy]").textContent = place.copy;
+if (placeCode && placeName && placeCopy) {
+  placePoints.forEach((point) => {
+    point.addEventListener("click", () => {
+      const place = places[point.dataset.place];
+      if (!place) return;
+
+      placePoints.forEach((item) => item.classList.remove("is-active"));
+      point.classList.add("is-active");
+      placeCode.textContent = place.code;
+      placeName.textContent = place.name;
+      placeCopy.textContent = place.copy;
+    });
   });
-});
+}
 
-document.querySelector("[data-year]").textContent = new Date().getFullYear();
+/* The dispatch index. Every entry is already in the page; this only narrows
+   the view. With scripting off the full record reads top to bottom. */
+const beatOrder = ["everreach_life", "open_court", "interview", "outside_contact"];
+const filterBar = document.querySelector("[data-beat-filter]");
+const entries = Array.from(document.querySelectorAll(".dispatch-entry"));
+const filterEmpty = document.querySelector("[data-filter-empty]");
+
+if (filterBar && entries.length > 1) {
+  const seen = [];
+  entries.forEach((entry) => {
+    const beat = entry.dataset.beat;
+    const section = entry.dataset.section;
+    if (!beat || !section) return;
+    if (!seen.some((item) => item.beat === beat)) seen.push({ beat, section });
+  });
+
+  seen.sort((a, b) => {
+    const ai = beatOrder.indexOf(a.beat);
+    const bi = beatOrder.indexOf(b.beat);
+    return (ai < 0 ? beatOrder.length : ai) - (bi < 0 ? beatOrder.length : bi);
+  });
+
+  if (seen.length > 1) {
+    const buttons = [];
+
+    const apply = (beat) => {
+      let shown = 0;
+      entries.forEach((entry) => {
+        const match = beat === "all" || entry.dataset.beat === beat;
+        entry.hidden = !match;
+        if (match) shown += 1;
+      });
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.filter === beat));
+      });
+      if (filterEmpty) filterEmpty.hidden = shown > 0;
+    };
+
+    const addButton = (value, label) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.dataset.filter = value;
+      button.textContent = label;
+      button.setAttribute("aria-pressed", String(value === "all"));
+      button.addEventListener("click", () => apply(value));
+      filterBar.appendChild(button);
+      buttons.push(button);
+    };
+
+    addButton("all", "All");
+    seen.forEach((item) => addButton(item.beat, item.section));
+
+    filterBar.setAttribute("role", "group");
+    filterBar.setAttribute("aria-label", "Filter dispatches by section");
+    filterBar.hidden = false;
+  }
+}
+
+const yearSlot = document.querySelector("[data-year]");
+if (yearSlot) yearSlot.textContent = new Date().getFullYear();

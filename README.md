@@ -9,14 +9,14 @@ deliberately outside the public record.
 
 ## Local preview
 
-```sh
-python3 -m http.server 4173
-```
+Serve this directory over HTTP with any static file server, then open the
+address it prints.
 
-Then open `http://localhost:4173`.
+```sh
+python3 -m http.server
+```
 
 ## Artwork
 
-The founding Circle and Everreach environment artworks were generated for NHA
-with OpenAI image generation. The NHA sigil and website design are original to
-this repository.
+The founding Circle and Everreach environment artworks were produced for NHA.
+The NHA sigil and website design are original to this repository.

@@ -1,0 +1,45 @@
+<!-- ==========================================================================
+     PASSAGE FRAGMENTS
+     One block per PublicPassage variant. Substitute, then join with newlines
+     and splice between the passages markers in dispatch.html.
+     A run of consecutive question / answer / abstention passages is wrapped
+     once in <div class="dialogue"> ... </div>.
+     ========================================================================== -->
+
+<!-- p: "lede" — first passage only -->
+<p class="dispatch-lede">{{TEXT}}</p>
+
+<!-- p: "body" -->
+<p>{{TEXT}}</p>
+
+<!-- p: "rule" -->
+<hr class="dispatch-rule">
+
+<!-- p: "correction" — corrects is the earlier piece's slug -->
+<p class="dispatch-correction">Corrects <a href="../{{CORRECTS}}/">Dispatch {{CORRECTS_ORDINAL}}</a>. {{TEXT}}</p>
+
+<!-- p: "question" — asked is a display name -->
+<div class="dialogue-turn dialogue-question">
+  <p class="dialogue-speaker">{{ASKED}}</p>
+  <p class="dialogue-line">{{TEXT}}</p>
+</div>
+
+<!-- p: "answer" — text contains her words verbatim, typographically quoted -->
+<div class="dialogue-turn dialogue-answer">
+  <p class="dialogue-speaker">{{SAID}}</p>
+  <p class="dialogue-line">{{TEXT}}</p>
+</div>
+
+<!-- p: "abstention" — the line is the interviewer's report, NOT her words. The
+     speaker column names who was asked; the qualifier keeps a screen reader
+     from announcing the report as something she said. -->
+<div class="dialogue-turn dialogue-abstention">
+  <p class="dialogue-speaker">{{SAID}}<span class="sr-only">, asked</span></p>
+  <p class="dialogue-line"><span class="sr-only">No answer given. </span>{{TEXT}}</p>
+</div>
+
+<!-- corrected-by notice — one <aside>, listing every later piece that corrected
+     this one. Goes between the corrected-by markers. The page stays up. -->
+<aside class="dispatch-notice section-shell">
+  <p>Corrected by <a href="../{{CORRECTED_BY}}/">Dispatch {{CORRECTED_BY_ORDINAL}}</a>. This page stands as it was filed.</p>
+</aside>

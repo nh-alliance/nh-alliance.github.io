@@ -1,0 +1,13 @@
+<!-- ==========================================================================
+     HOME PAGE ROW — the three most recent entries, spliced between the
+     dispatch-latest markers in index.html, wrapped once in
+     <ul class="latest-list" role="list"> ... </ul>, replacing the empty state.
+     Paths here are relative to the site root, not to dispatches/.
+     ========================================================================== -->
+<li class="latest-entry" data-saber="{{SABER}}">
+  <a href="dispatches/{{SLUG}}/">
+    <span class="latest-index"><b>{{ORDINAL}}</b> {{SECTION}}</span>
+    <span class="latest-headline">{{HEADLINE}}</span>
+    <span class="latest-sign">{{BYLINE_NAME}} &middot; Day {{DAY}}</span>
+  </a>
+</li>

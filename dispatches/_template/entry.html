@@ -1,0 +1,21 @@
+<!-- ==========================================================================
+     INDEX ROW — one PublicIndexEntry.
+     The generated form of dispatches/index.html wraps every row in
+     <ol class="dispatch-list" role="list" data-dispatch-list> ... </ol> and splices that
+     list between the dispatch-entries markers, replacing the empty state.
+     data-saber is "green", "blue", or omitted when the member carries neither.
+     ========================================================================== -->
+<li class="dispatch-entry" data-beat="{{BEAT}}" data-section="{{SECTION}}" data-saber="{{SABER}}">
+  <a class="dispatch-entry-link" href="{{SLUG}}/">
+    <p class="dispatch-index"><b>{{ORDINAL}}</b> <span>{{SECTION}}</span></p>
+    <div class="dispatch-entry-copy">
+      <h3 class="dispatch-entry-headline">{{HEADLINE}}</h3>
+      <p class="dispatch-entry-standfirst">{{STANDFIRST}}</p>
+    </div>
+    <p class="dispatch-entry-meta">
+      <span class="dispatch-entry-name">{{BYLINE_NAME}}</span>
+      <span class="dispatch-entry-title">{{BYLINE_TITLE}}</span>
+      <time datetime="{{DATE}}">Day {{DAY}} &middot; {{PHASE}}</time>
+    </p>
+  </a>
+</li>
