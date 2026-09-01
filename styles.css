@@ -1796,357 +1796,971 @@ body.is-ready [data-reveal] {
    THE FORUM
    ==========================================================================
 
-   A clan forum, in the same room as the rest of the site: boards, threads,
-   and posts signed by the member who took the photograph. It reuses the
-   record page's chrome — `.page-record`, `.section-shell`, `.record-label`,
-   `.action` — and adds nothing to the palette. Rectangles and hairlines. No
-   avatars, no vote counts, no rounded cards; the site has exactly three
-   `border-radius` declarations and all three are dots on a map.
+   A clan message board, in the same room as the rest of the site. The shape
+   is the one every Jedi Academy clan ran in the 2000s, and a reader
+   recognises it without being told what it is:
 
-   WHY EVERY SELECTOR BELOW IS PREFIXED WITH `.page-record`.
+     BOARD INDEX   five rows, each with a thread count, a post count, and who
+                   posted last, in a bordered block under a header bar.
+     BOARD         threads as rows, newest activity first, with who opened
+                   each one and who answered last. Twenty-five to a page.
+     THREAD        posts down the page, the panel on the left saying who is
+                   speaking, the post number on the right a permalink.
+
+   Breadcrumbs across the top of all three. It is that STRUCTURE, not the
+   decoration, that makes a page read as a board instead of a blog with dark
+   colours on it, which is why the rules below are mostly grids and hairlines.
+
+   NOTHING HERE IS POSTABLE. No compose box, no login, no reply form: nobody
+   posts through this page and it does not pretend they can. The chrome is
+   real and the machinery is deliberately absent.
+
+   IT ADDS NOTHING TO THE PALETTE. Rectangles, hairlines at `--rule`, Aldrich
+   for names and counts, Barlow for what she said. Two tints are declared, and
+   both are the green already in the page at very low alpha: one for the
+   header bars, one for a row under the cursor. The site has exactly three
+   `border-radius` declarations and all three are dots on a map; the forum
+   adds none.
+
+   WHY EVERY SELECTOR IS PREFIXED WITH `.page-record`.
    The forum's pages are written by `tools/posted.ts`. It used to link this
    file and then emit a duplicate `<style>` block of its own after the link,
    which won on source order; the prefix was what kept these rules on top. The
-   generator emits no styles now — this file is the only description of a post
-   there is — and the prefix stays because it is also what scopes the forum to
-   the record chrome it borrows.
+   generator emits no styles now — this file is the only description of a
+   board there is — and the prefix stays because it is also what scopes the
+   forum to the record chrome it borrows.
 
-   TWO HOOKS ARE READ BUT NOT REQUIRED, so a page keeps its shape whether the
-   generator emits them or not:
-     [data-saber] on `.post`  — tints `--member-color`; absent, it stays
-                                `--starlight`, which is a deliberate colour
-                                here and not a failure state.
-     .post-role               — her responsibility beside her name; absent,
-                                the meta line simply has one fact fewer.
+   ONE HOOK IS READ AND NEVER REQUIRED: `[data-saber]` on `.fpost` tints
+   `--member-color`. Absent, it stays `--starlight`, a deliberate colour here
+   and not a failure state. Saber colour is never the only carrier of a fact:
+   the panel prints the word beside the chip.
    -------------------------------------------------------------------------- */
 
-.page-record .forum-head {
-  /* `.page-record main` has already cleared the fixed header. */
-  padding-top: 0;
-  padding-bottom: clamp(2.4rem, 6vw, 3.8rem);
+.page-record {
+  --board-bar: oklch(0.75 0.04 140 / 0.06);
+  --board-hover: oklch(0.75 0.04 140 / 0.045);
 }
 
-/* `<h1>` inside `<section>` has no size of its own in this stylesheet, and the
-   UA's sectioned default is not something to inherit by accident. */
-.page-record .forum-head h1 {
-  max-width: 16ch;
-  margin-bottom: 1.4rem;
-  font-size: clamp(2.35rem, 7.6vw, 5rem);
-  text-transform: uppercase;
+/* --- breadcrumbs ---------------------------------------------------------
+   Where you are, in the archive's own separator. The trail is uppercase
+   because it is a row of labels; the page you are actually on is not, because
+   on a thread that label is a sentence somebody's handle is inside. */
+
+.page-record .crumbs {
+  margin: 0 0 1.5rem;
 }
 
-/* The breadcrumb back to the board lives inside the record label on a post
-   page, so it is underlined rather than coloured — the label is already green. */
-.page-record .forum-head .record-label a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid var(--rule);
-}
-
-.page-record .forum-head .record-label a:hover {
-  color: var(--ink);
-  border-bottom-color: var(--green);
-}
-
-.page-record .forum-lead {
-  max-width: 62ch;
-  margin: 0;
-  color: var(--muted);
-  font-size: clamp(1.05rem, 2vw, 1.2rem);
-  overflow-wrap: break-word;
-}
-
-/* --- the boards ---------------------------------------------------------
-   A register of topics, set like the dispatch index: hairline rows, the
-   count filed right where a clerk would put it. */
-
-.page-record .topic-list {
-  display: block;
-  margin: clamp(2.2rem, 5vw, 3.2rem) 0 0;
-  padding: 0;
-  border-top: 1px solid var(--rule);
-  list-style: none;
-}
-
-.page-record .topic-list > li {
-  border-bottom: 1px solid var(--rule);
-}
-
-.page-record .topic-list a {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 8rem);
-  gap: 0.4rem 2rem;
-  align-items: baseline;
-  padding: 1.5rem 0;
-  border: 0;
-  border-radius: 0;
-  text-decoration: none;
-  transition: padding-left 240ms var(--ease-out);
-}
-
-.page-record .topic-list b {
-  grid-column: 1;
-  display: block;
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
-  font-weight: 400;
-  line-height: 1.14;
-  letter-spacing: -0.01em;
-  overflow-wrap: break-word;
-  transition: color 240ms ease;
-}
-
-.page-record .topic-list a > span:not(.topic-count) {
-  grid-column: 1;
-  max-width: 56ch;
-  color: var(--muted);
-  font-size: 0.95rem;
-  overflow-wrap: break-word;
-}
-
-/* `float` would drop out of the grid and collide with a long board name. */
-.page-record .topic-list a > span.topic-count {
-  float: none;
-  grid-row: 1 / span 2;
-  grid-column: 2;
-  align-self: start;
-  color: var(--green);
-  font-family: var(--font-display);
-  font-size: 0.66rem;
-  line-height: 1.9;
-  letter-spacing: 0.12em;
-  text-align: right;
-  text-transform: uppercase;
-}
-
-@media (hover: hover) {
-  .page-record .topic-list a:hover {
-    padding-left: 0.7rem;
-  }
-
-  .page-record .topic-list a:hover b {
-    color: var(--green);
-  }
-}
-
-/* --- a thread -----------------------------------------------------------
-   Posts read down the page as rows in a record, oldest first, separated by
-   the same hairline the dispatch list uses. The frame sits in its own column
-   beside the words on a wide screen and above them on a narrow one, and it is
-   never enlarged past the pixels the client actually captured. */
-
-.page-record .post-list {
-  display: block;
-  margin: 0 0 clamp(2.6rem, 6vw, 4rem);
-  padding: 0;
-  border-top: 1px solid var(--rule);
-  list-style: none;
-}
-
-.page-record .record-label + .post-list {
-  margin-top: 1.4rem;
-}
-
-.page-record .post {
-  --member-color: var(--starlight);
-  display: grid;
-  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
-  gap: 1.2rem 2.4rem;
-  align-items: start;
-  padding: clamp(1.8rem, 4vw, 2.6rem) 0;
-  border: 0;
-  border-bottom: 1px solid var(--rule);
-  border-radius: 0;
-  background: none;
-  overflow: visible;
-}
-
-.page-record .post[data-saber="green"] {
-  --member-color: var(--green);
-}
-
-.page-record .post[data-saber="blue"] {
-  --member-color: var(--blue);
-}
-
-/* THE FRAME. `width`/`height` on the <img> are the capture's real pixels, so
-   the ratio is known before a byte arrives and nothing below it moves. The
-   max-width is the same number: a 640-wide screenshot blown up to 1180 is a
-   worse picture, not a bigger one. */
-.page-record .post-figure {
-  max-width: min(100%, 640px);
-  margin: 0;
-  border: 1px solid var(--rule);
-  background: var(--night);
-  transition: border-color 240ms ease;
-}
-
-.page-record .post-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-@media (hover: hover) {
-  .page-record .post:hover .post-figure {
-    border-color: var(--member-color);
-  }
-}
-
-.page-record .post-body {
-  min-width: 0;
-  padding: 0;
-}
-
-/* Who, filed under what, when, and where — the attribution a forum post
-   carries inline, in the archive's own hand. */
-.page-record .post-meta {
+.page-record .crumbs ol {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.35rem 1.2rem;
-  margin: 0 0 1rem;
-  color: var(--muted);
+  gap: 0.3rem 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-family: var(--font-display);
   font-size: 0.7rem;
-  line-height: 1.6;
-  letter-spacing: 0.12em;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.page-record .post-who {
-  color: var(--member-color);
-  font-size: 0.98rem;
-  letter-spacing: 0.04em;
-  text-transform: none;
-  overflow-wrap: break-word;
+.page-record .crumbs li {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 0.6rem;
 }
 
-.page-record .post-role {
-  color: var(--muted);
+.page-record .crumbs li + li::before {
+  content: "//";
+  color: var(--green-deep);
 }
 
-.page-record .post-tag {
-  color: var(--green);
-}
-
-.page-record .post-meta a {
+.page-record .crumbs a {
   color: var(--muted);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 200ms ease, border-color 200ms ease;
 }
 
-.page-record .post-meta a:hover {
+.page-record .crumbs a:hover {
   color: var(--ink);
   border-bottom-color: var(--rule);
 }
 
-.page-record .post-meta time {
-  font-variant-numeric: tabular-nums;
+.page-record .crumbs [aria-current] {
+  color: var(--green);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  overflow-wrap: break-word;
 }
 
-.page-record .post-text {
+/* --- the head of a board page -------------------------------------------- */
+
+.page-record .forum-head {
+  /* `.page-record main` has already cleared the fixed header. */
+  padding-top: 0;
+  padding-bottom: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+/* `<h1>` inside `<section>` has no size of its own in this stylesheet, and the
+   UA's sectioned default is not something to inherit by accident. A board name
+   is short and set large; a THREAD title carries a handle in it and is set one
+   step down, in the case it was written in, so `-[KR]-Raiden` stays his. */
+.page-record .forum-head h1 {
+  max-width: 22ch;
+  margin-bottom: 1.1rem;
+  font-size: clamp(1.9rem, 5.4vw, 3.4rem);
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.page-record .forum-head.is-index h1 {
+  max-width: 16ch;
+  font-size: clamp(2.35rem, 7.6vw, 5rem);
+}
+
+.page-record .forum-head.is-thread h1 {
+  max-width: 26ch;
+  text-transform: none;
+}
+
+.page-record .forum-lead {
   max-width: 62ch;
   margin: 0;
-  color: var(--ink);
-  font-size: clamp(1.05rem, 2vw, 1.16rem);
-  line-height: 1.62;
-  overflow-wrap: break-word;
-}
-
-/* The people in the frame. Handles are unbroken strings with brackets and
-   hyphens in them, so this wraps anywhere rather than pushing the page wide. */
-.page-record .post-foot {
-  max-width: 62ch;
-  margin: 1rem 0 0;
   color: var(--muted);
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
+  font-size: clamp(1.02rem, 2vw, 1.16rem);
   overflow-wrap: break-word;
 }
 
-/* --- replies ------------------------------------------------------------
-   The reason a forum beats a broadcast: somebody else gets to answer, in the
-   thread, under the post. Indented behind one rule, names set as names. */
+/* --- a block of the board ------------------------------------------------
+   Header bar, then the bordered block it caps. The bar is the one piece of
+   furniture a message board has that nothing else on this site does, and it
+   is what a reader recognises the page by before reading a word of it. */
 
-.page-record .post-replies {
-  max-width: 62ch;
-  margin: 1.5rem 0 0;
-  padding: 0 0 0 1.2rem;
-  border-top: 0;
-  border-left: 1px solid var(--rule);
+.page-record .forum-section {
+  padding-bottom: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.page-record .forum-h2 {
+  margin: 0;
+  padding: 0.78rem 1rem;
+  border: 1px solid var(--rule);
+  background: var(--board-bar);
+  color: var(--green);
+  font-size: 0.76rem;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.page-record .board-index,
+.page-record .thread-index,
+.page-record .thread {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--rule);
   list-style: none;
 }
 
-.page-record .post-reply {
-  margin: 0;
-  padding: 0.85rem 0;
+.page-record .forum-h2 + .board-index,
+.page-record .forum-h2 + .thread-index,
+.page-record .forum-h2 + .thread,
+.page-record .forum-h2 + .forum-stats,
+.page-record .forum-h2 + .forum-empty {
+  border-top: 0;
+}
+
+/* --- rows ---------------------------------------------------------------- */
+
+.page-record .list-head,
+.page-record .brow,
+.page-record .trow {
+  display: grid;
+  align-items: start;
+  gap: 0.4rem 1.5rem;
+  padding: 1.05rem 1rem;
   border-bottom: 1px solid var(--rule);
-  color: var(--muted);
-  font-size: 0.98rem;
-  overflow-wrap: break-word;
 }
 
-.page-record .post-reply:first-child {
-  padding-top: 0;
-}
-
-.page-record .post-reply:last-child {
-  padding-bottom: 0;
+.page-record .board-index > li:last-child,
+.page-record .thread-index > li:last-child,
+.page-record .thread > li:last-child {
   border-bottom: 0;
 }
 
-.page-record .post-reply b {
-  display: block;
-  margin-bottom: 0.15rem;
-  color: var(--starlight);
+.page-record .board-index .list-head,
+.page-record .board-index .brow {
+  grid-template-columns: minmax(0, 1fr) 4.6rem 4.6rem minmax(0, 16rem);
+}
+
+.page-record .thread-index .list-head,
+.page-record .thread-index .trow {
+  grid-template-columns: minmax(0, 1fr) 5.2rem minmax(0, 16rem);
+}
+
+/* The column headings. Decorative to a screen reader — every cell under them
+   also carries its own label — so they are `aria-hidden` in the markup. */
+.page-record .list-head {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  background: var(--board-bar);
+  color: var(--muted);
   font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-size: 0.62rem;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@media (hover: hover) {
+  .page-record .brow:hover,
+  .page-record .trow:hover {
+    background: var(--board-hover);
+  }
+}
+
+.page-record .brow-main,
+.page-record .trow-main {
+  min-width: 0;
+}
+
+.page-record .brow-name {
+  margin: 0 0 0.3rem;
+  font-size: clamp(1.02rem, 2.2vw, 1.22rem);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  overflow-wrap: break-word;
+}
+
+.page-record .brow-name a,
+.page-record .trow-title a,
+.page-record .frame-title a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.page-record .brow-name a:hover,
+.page-record .trow-title a:hover,
+.page-record .frame-title a:hover {
+  color: var(--green);
+}
+
+.page-record .brow-blurb {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* The board a thread is filed under, worn in front of its title the way a
+   board tags a thread. Never on its own line: it is part of the subject. */
+.page-record .trow-title {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  align-items: baseline;
+  gap: 0.45rem 0.7rem;
+  margin: 0 0 0.3rem;
+}
+
+.page-record .trow-filed {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--rule);
+  color: var(--green);
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.page-record .trow-title a {
+  font-family: var(--font-display);
+  font-size: clamp(0.98rem, 2vw, 1.1rem);
+  line-height: 1.28;
+  overflow-wrap: break-word;
+}
+
+.page-record .trow-by {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+/* The counted columns. A board index is a table of numbers and this is the
+   one place on the site where a number is the loudest thing in its row. */
+.page-record .brow-stat,
+.page-record .trow-replies {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* The heading row names the column, so the number under it does not name
+   itself a second time. Below 900px that row is gone and the label comes
+   back — see the narrow block at the end of this section. */
+.page-record .brow-stat > span,
+.page-record .trow-replies > span {
+  display: none;
+}
+
+.page-record .brow-stat b,
+.page-record .trow-replies b {
+  display: block;
+  margin-bottom: 0.1rem;
+  color: var(--starlight);
+  font-size: 1.2rem;
   font-weight: 400;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.page-record .brow-last,
+.page-record .trow-last {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.page-record .brow-last a {
+  color: var(--starlight);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+.page-record .brow-last a:hover {
+  color: var(--green);
+  border-bottom-color: var(--rule);
+}
+
+.page-record .brow-quiet {
+  color: var(--muted);
+}
+
+.page-record .trow-by b,
+.page-record .brow-last b,
+.page-record .trow-last b {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.page-record .brow-last time,
+.page-record .trow-last time,
+.page-record .trow-by time,
+.page-record .frame-by time,
+.page-record .forum-stats time {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Every cell says what it is on a narrow screen, where the heading row that
+   named it is gone. */
+.page-record .cell-label {
+  display: none;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* --- the newest frames on the index --------------------------------------
+   A board whose posts ARE photographs should show one before asking anybody
+   to click. Three, because three fills the row at every width without
+   becoming a gallery, and never enlarged past the pixels the client captured. */
+
+.page-record .frames {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.2rem, 3vw, 2rem);
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-record .frames figure {
+  margin: 0;
+}
+
+.page-record .frame-shot {
+  display: block;
+  max-width: 640px;
+  border: 1px solid var(--rule);
+  background: var(--night);
+  transition: border-color 240ms ease;
+}
+
+.page-record .frame-shot img {
+  width: 100%;
+  height: auto;
+}
+
+.page-record .frame-shot:hover {
+  border-color: var(--green);
+}
+
+.page-record .frames figcaption {
+  padding-top: 0.85rem;
+}
+
+.page-record .frame-title {
+  margin: 0 0 0.3rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.28;
+  overflow-wrap: break-word;
+}
+
+.page-record .frame-by {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.page-record .frame-by b {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.page-record .frame-by a {
+  color: var(--muted);
+}
+
+/* --- a thread ------------------------------------------------------------
+   The panel on the left is the oldest idea a message board has: you know who
+   is speaking before you read a word they said. It carries her name in her
+   saber colour, her responsibility under it, and how much of this board is
+   hers. */
+
+.page-record .fpost {
+  --member-color: var(--starlight);
+  display: grid;
+  grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+  gap: 0 clamp(1.2rem, 2.6vw, 2.2rem);
+  padding: clamp(1.5rem, 3.4vw, 2.2rem) clamp(1rem, 2.4vw, 1.6rem);
+  border-bottom: 1px solid var(--rule);
+}
+
+.page-record .fpost[data-saber="green"] {
+  --member-color: var(--green);
+}
+
+.page-record .fpost[data-saber="blue"] {
+  --member-color: var(--blue);
+}
+
+.page-record .fpost-user {
+  padding-right: clamp(1rem, 2.4vw, 1.8rem);
+  border-right: 1px solid var(--rule);
+}
+
+.page-record .fpost-name {
+  margin: 0;
+  color: var(--member-color);
+  font-family: var(--font-display);
+  font-size: 1.06rem;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.page-record .fpost-rank {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.page-record .fpost-stats {
+  margin: 1.1rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.78rem;
+}
+
+.page-record .fpost-stats > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.page-record .fpost-stats > div:last-child {
+  margin-bottom: 0;
+}
+
+.page-record .fpost-stats dt {
+  flex: 0 0 100%;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.page-record .fpost-stats dd {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.page-record .saber-chip {
+  width: 0.62rem;
+  height: 0.62rem;
+  flex: 0 0 auto;
+  background: var(--member-color);
+}
+
+.page-record .fpost-main {
+  min-width: 0;
+}
+
+.page-record .fpost-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.25rem 1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.page-record .fpost-subject {
+  grid-column: 1;
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1rem, 2.1vw, 1.16rem);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  overflow-wrap: break-word;
+}
+
+.page-record .fpost-by {
+  grid-column: 1;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.page-record .fpost-by b {
+  color: var(--starlight);
+  font-weight: 500;
+}
+
+.page-record .fpost-by time {
+  font-variant-numeric: tabular-nums;
+}
+
+.page-record .fpost-sep {
+  color: var(--green-deep);
+}
+
+/* The permalink. Small type, but a full touch target: the padding is pulled
+   back out with a negative margin so it does not push the row wider. */
+.page-record .fpost-no {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: flex-start;
+  align-self: start;
+  padding: 0 0.5rem;
+  margin-right: -0.5rem;
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+  transition: color 200ms ease;
+}
+
+.page-record .fpost-no:hover {
+  color: var(--green);
+}
+
+/* THE FRAME. `width`/`height` on the <img> are the capture's real pixels, so
+   the ratio is known before a byte arrives and nothing below it moves. The
+   max-width is the same number: a 640-wide screenshot blown up to 1180 is a
+   worse picture, not a bigger one. */
+.page-record .fpost-figure {
+  max-width: min(100%, 640px);
+  margin: 1.3rem 0 0;
+  border: 1px solid var(--rule);
+  background: var(--night);
+  transition: border-color 240ms ease;
+}
+
+.page-record .fpost-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (hover: hover) {
+  .page-record .fpost:hover .fpost-figure {
+    border-color: var(--member-color);
+  }
+}
+
+.page-record .fpost-text {
+  margin-top: 1.3rem;
+}
+
+.page-record .fpost-text p {
+  max-width: 68ch;
+  margin: 0 0 0.9rem;
+  color: var(--ink);
+  font-size: clamp(1.02rem, 1.9vw, 1.12rem);
+  line-height: 1.66;
+  overflow-wrap: break-word;
+}
+
+.page-record .fpost-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* The people in the frame, and the ground it was taken on. Handles are
+   unbroken strings with brackets and hyphens in them, so this wraps anywhere
+   rather than pushing the page wide. */
+.page-record .fpost-facts {
+  max-width: 68ch;
+  margin: 1.1rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  overflow-wrap: break-word;
+}
+
+/* --- moving between threads and pages ------------------------------------ */
+
+.page-record .jumps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.page-record .jump {
+  display: flex;
+  max-width: 26rem;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  transition: color 220ms ease, border-color 220ms ease;
+}
+
+.page-record .jump span {
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.page-record .jump:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.page-record .jump[rel="next"] {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.page-record .pager {
+  margin-top: 1.5rem;
+}
+
+.page-record .pager ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+}
+
+.page-record .pager a,
+.page-record .pager span {
+  display: inline-flex;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+.page-record .pager a:hover {
+  color: var(--ink);
+  border-color: var(--green);
+}
+
+.page-record .pager [aria-current] {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+/* The run of pages nobody is near. It is a gap, not a destination. */
+.page-record .pager-gap span {
+  min-width: 1.4rem;
+  padding: 0;
+  border: 0;
+}
+
+.page-record .pager-step a {
+  font-size: 0.66rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.page-record .forum-empty {
-  margin: 0 0 clamp(2.6rem, 6vw, 4rem);
-  padding: clamp(2rem, 5vw, 3rem) 0;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+.page-record .board-return {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.5rem 0 0;
+}
+
+/* --- what the board says when it is nearly empty --------------------------
+   Five posts and five hundred are the same page. A board with nothing on it
+   keeps its header bar, its border and its own sentence, so it reads as a
+   board waiting rather than as a page that failed to load. */
+
+.page-record .forum-stats {
+  margin: 0;
+  padding: 1.05rem 1rem;
+  border: 1px solid var(--rule);
   color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.page-record .forum-stats b {
+  color: var(--starlight);
+  font-weight: 500;
+}
+
+.page-record .forum-stats a {
+  color: var(--ink);
+}
+
+.page-record .forum-empty {
+  margin: 0;
+  padding: clamp(1.8rem, 4vw, 2.6rem) 1rem;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  overflow-wrap: break-word;
+}
+
+/* --- narrow ---------------------------------------------------------------
+   The two listings do not collapse at the same width, because they are not
+   the same width of problem: the board index carries FOUR columns and runs
+   out of room first, the thread listing carries three and holds its shape
+   well into tablet. Each one drops its heading row only when it drops its
+   columns, and every cell that loses its heading starts saying its own name.
+
+   The user panel lies down across the top of its post, which is where
+   phpBB's own narrow skins put it and where it stops being a column fighting
+   a paragraph for the same 300 pixels. */
+
+@media (max-width: 1080px) {
+  .page-record .board-index .list-head,
+  .page-record .board-index .brow {
+    grid-template-columns: minmax(0, 1fr) 3.8rem 3.8rem minmax(0, 12rem);
+    gap: 0.4rem 1.1rem;
+  }
+
+  .page-record .thread-index .list-head,
+  .page-record .thread-index .trow {
+    grid-template-columns: minmax(0, 1fr) 4.4rem minmax(0, 12rem);
+    gap: 0.4rem 1.1rem;
+  }
 }
 
 @media (max-width: 900px) {
-  /* One column. The frame leads, because the photograph is what she posted. */
-  .page-record .post {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.1rem;
+  .page-record .board-index .list-head {
+    display: none;
   }
 
-  .page-record .topic-list a {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.35rem;
+  .page-record .board-index .cell-label {
+    display: block;
   }
 
-  .page-record .topic-list a > span.topic-count {
-    grid-row: auto;
-    grid-column: 1;
-    order: -1;
-    text-align: left;
+  /* The two counts sit together, not one at each edge of the row: they are
+     one fact about the board read twice, not a pair of opposing columns. */
+  .page-record .board-index .brow {
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 0.9rem 1.6rem;
+  }
+
+  .page-record .brow-main,
+  .page-record .brow-last {
+    grid-column: 1 / -1;
+  }
+
+  .page-record .brow-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+
+  .page-record .brow-stat > span {
+    display: inline;
+  }
+
+  .page-record .brow-stat b {
+    display: inline;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+
+  .page-record .frames {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-record .fpost {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.2rem;
+  }
+
+  .page-record .fpost-user {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem 1.2rem;
+    padding: 0 0 1rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .page-record .fpost-rank {
+    margin: 0;
+  }
+
+  .page-record .fpost-stats {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.4rem;
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+  }
+
+  .page-record .fpost-stats > div {
+    margin-bottom: 0;
+  }
+
+  .page-record .fpost-stats dt {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-record .thread-index .list-head {
+    display: none;
+  }
+
+  .page-record .thread-index .cell-label {
+    display: block;
+  }
+
+  .page-record .thread-index .trow {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.7rem;
+  }
+
+  .page-record .trow-replies {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+
+  .page-record .trow-replies > span {
+    display: inline;
+  }
+
+  .page-record .trow-replies b {
+    display: inline;
+    margin-bottom: 0;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 620px) {
-  .page-record .post-meta {
-    gap: 0.3rem 0.9rem;
+  .page-record .frames {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-record .jumps {
+    flex-direction: column;
+  }
+
+  .page-record .jump,
+  .page-record .jump[rel="next"] {
+    max-width: none;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .page-record .topic-list a,
-  .page-record .post-figure,
-  .page-record .post-meta a {
+  .page-record .crumbs a,
+  .page-record .brow-name a,
+  .page-record .trow-title a,
+  .page-record .frame-title a,
+  .page-record .frame-shot,
+  .page-record .brow-last a,
+  .page-record .fpost-figure,
+  .page-record .fpost-no,
+  .page-record .jump,
+  .page-record .pager a {
     transition: none;
   }
 }
