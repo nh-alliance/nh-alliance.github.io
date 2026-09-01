@@ -1,0 +1,27 @@
+{
+  "slug": "0004-tala-finished-tending-the-workshops",
+  "beat": "everreach_life",
+  "section": "Everreach",
+  "headline": "Tala finished tending The Workshops",
+  "standfirst": null,
+  "byline": {
+    "name": "Tala",
+    "title": "Right Hand",
+    "slug": "tala",
+    "saber": "blue"
+  },
+  "dateline": "Alliance Spire, Day 7 · deepnight",
+  "published": {
+    "day": 7,
+    "phase": "deepnight",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "I finished tending The Workshops."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}

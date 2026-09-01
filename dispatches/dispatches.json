@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0004-tala-finished-tending-the-workshops",
+      "beat": "everreach_life",
+      "section": "Everreach",
+      "headline": "Tala finished tending The Workshops",
+      "standfirst": null,
+      "byline": {
+        "name": "Tala",
+        "title": "Right Hand",
+        "slug": "tala",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 7,
+        "phase": "deepnight",
+        "date": "2026-09-01"
+      }
+    },
+    {
       "slug": "0003-artemis-took-the-bout-against-adara",
       "beat": "open_court",
       "section": "The Open Court",
@@ -56,8 +74,8 @@
     }
   ],
   "beats": [
-    "open_court",
     "everreach_life",
+    "open_court",
     "interview"
   ]
 }
