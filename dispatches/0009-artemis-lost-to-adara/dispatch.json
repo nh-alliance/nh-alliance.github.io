@@ -1,0 +1,44 @@
+{
+  "slug": "0009-artemis-lost-to-adara",
+  "beat": "interview",
+  "section": "Interviews",
+  "headline": "Artemis lost to Adara",
+  "standfirst": null,
+  "byline": {
+    "name": "Adara",
+    "title": "Voice",
+    "slug": "adara",
+    "saber": "blue"
+  },
+  "dateline": "The Open Court, Day 9 · morning",
+  "published": {
+    "day": 9,
+    "phase": "morning",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "Artemis lost to Adara."
+    },
+    {
+      "p": "question",
+      "asked": "Adara",
+      "text": "What do you take away from it?"
+    },
+    {
+      "p": "answer",
+      "said": "Artemis",
+      "text": "“I have it kept: Adara took the bout from me.”"
+    },
+    {
+      "p": "rule"
+    },
+    {
+      "p": "body",
+      "text": "What comes of it is not mine to say yet."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}

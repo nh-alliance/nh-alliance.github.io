@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0009-artemis-lost-to-adara",
+      "beat": "interview",
+      "section": "Interviews",
+      "headline": "Artemis lost to Adara",
+      "standfirst": null,
+      "byline": {
+        "name": "Adara",
+        "title": "Voice",
+        "slug": "adara",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 9,
+        "phase": "morning",
+        "date": "2026-09-01"
+      }
+    },
+    {
       "slug": "0008-artemis-came-into-the-long-causeway",
       "beat": "everreach_life",
       "section": "Everreach",
@@ -146,8 +164,8 @@
     }
   ],
   "beats": [
+    "interview",
     "everreach_life",
-    "open_court",
-    "interview"
+    "open_court"
   ]
 }
