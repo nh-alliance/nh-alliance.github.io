@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0003-artemis-took-the-bout-against-adara",
+      "beat": "open_court",
+      "section": "The Open Court",
+      "headline": "Artemis took the bout against Adara",
+      "standfirst": "It went my way.",
+      "byline": {
+        "name": "Artemis",
+        "title": "Leader",
+        "slug": "artemis",
+        "saber": "green"
+      },
+      "published": {
+        "day": 6,
+        "phase": "duskfall",
+        "date": "2026-09-01"
+      }
+    },
+    {
       "slug": "0002-tala-did-not-finish-what-was-started-at-the",
       "beat": "everreach_life",
       "section": "Everreach",
@@ -38,6 +56,7 @@
     }
   ],
   "beats": [
+    "open_court",
     "everreach_life",
     "interview"
   ]

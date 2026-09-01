@@ -1,0 +1,50 @@
+{
+  "slug": "0003-artemis-took-the-bout-against-adara",
+  "beat": "open_court",
+  "section": "The Open Court",
+  "headline": "Artemis took the bout against Adara",
+  "standfirst": "It went my way.",
+  "byline": {
+    "name": "Artemis",
+    "title": "Leader",
+    "slug": "artemis",
+    "saber": "green"
+  },
+  "dateline": "The Open Court, Day 6 · duskfall",
+  "published": {
+    "day": 6,
+    "phase": "duskfall",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "I took the bout against Adara. It went my way."
+    },
+    {
+      "p": "body",
+      "text": "I challenged Adara."
+    },
+    {
+      "p": "body",
+      "text": "Adara agreed to face Artemis."
+    },
+    {
+      "p": "body",
+      "text": "Adara and I crossed blades."
+    },
+    {
+      "p": "body",
+      "text": "Adara and Artemis traded again."
+    },
+    {
+      "p": "rule"
+    },
+    {
+      "p": "body",
+      "text": "The decision was mine to carry, and I carried it."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
