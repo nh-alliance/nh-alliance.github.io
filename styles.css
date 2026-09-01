@@ -888,6 +888,8 @@ body.is-ready [data-reveal] {
     padding: 0.9rem 0;
   }
 
+  }
+
   .hero-image {
     object-position: 63% center;
   }
@@ -1221,6 +1223,61 @@ body.is-ready [data-reveal] {
   flex: 0 0 auto;
 }
 
+/* --- no script, no drawer ------------------------------------------------
+   The mobile bar above is opened by script.js and by nothing else, so with
+   scripting off every link in the primary navigation sits off-screen under
+   `visibility: hidden` on a phone: the page reads, and there is no way out of
+   it. Here the header stops being a fixed overlay and becomes an ordinary
+   masthead that wraps, with all of the links in the flow from the first paint.
+
+   `scripting: none` is answered by the engine before any style is applied, so
+   unlike a class set from JS this cannot flash the wrong layout first. It also
+   matches when the page is being printed, which wants the same thing.
+
+   THIS BLOCK SITS BELOW `.page-record main` ON PURPOSE. It overrides that rule
+   at equal specificity, and a media query adds none — placed any earlier it
+   would lose on source order and leave a fixed bar's worth of empty space at
+   the top of every record page. */
+
+@media (max-width: 900px) and (scripting: none) {
+  .site-header {
+    position: static;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    padding-block: 1rem;
+    border-color: var(--rule);
+    background: oklch(0.08 0 0 / 0.86);
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    position: static;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.4rem;
+    padding: 0;
+    border-bottom: 0;
+    background: none;
+    backdrop-filter: none;
+    transform: none;
+    visibility: visible;
+    transition: none;
+  }
+
+  .site-nav a {
+    padding: 0.35rem 0;
+  }
+
+  /* `main` was only ever clearing a bar that no longer floats above it. */
+  .page-record main {
+    padding-top: clamp(1.6rem, 5vw, 2.6rem);
+  }
+}
+
 .site-nav a[aria-current="page"] {
   color: var(--green);
 }
@@ -1330,6 +1387,33 @@ body.is-ready [data-reveal] {
   font-size: 0.92rem;
   font-weight: 400;
   letter-spacing: 0.06em;
+}
+
+/* The filing column: the ordinal, the section, and the frame where the piece
+   has one. Putting the thumbnail here rather than in a column of its own is
+   what keeps the list straight — a row without a picture is unchanged, and no
+   headline moves because its neighbour carries one. */
+.dispatch-entry-file {
+  min-width: 0;
+}
+
+.dispatch-entry-plate {
+  display: block;
+  margin-top: 0.9rem;
+}
+
+.dispatch-entry-plate img {
+  width: 100%;
+  max-width: 168px;
+  height: auto;
+  border: 1px solid var(--rule);
+  transition: border-color 240ms ease;
+}
+
+@media (hover: hover) {
+  .dispatch-entry-link:hover .dispatch-entry-plate img {
+    border-color: var(--member-color);
+  }
 }
 
 .dispatch-entry-copy {
@@ -1505,6 +1589,61 @@ body.is-ready [data-reveal] {
   text-underline-offset: 0.3em;
 }
 
+/* --- the plate: a photograph one of them took ----------------------------
+   It is evidence filed with the words, so it takes the measure of the words:
+   the same 68ch column, the same left edge, the same hairline the rest of the
+   record is ruled with. It is not a hero image and must never read as one.
+
+   NOTHING SHIFTS WHEN IT LOADS. The <img> carries the frame's real pixel
+   width and height, so `width: 100%` plus `height: auto` gives the browser the
+   true ratio and it reserves the box before a byte of the picture arrives.
+   The max-height is a guard against a frame that is somehow portrait, not a
+   crop: `object-fit: contain` keeps whatever it is whole. */
+
+.dispatch-plate {
+  max-width: 68ch;
+  /* figure's UA margin is 1em 40px. The 40px would indent the picture out of
+     line with every paragraph above it. */
+  margin: 2.7rem 0;
+  padding: 0;
+}
+
+.dispatch-plate-frame {
+  width: 100%;
+  height: auto;
+  max-height: 80svh;
+  border: 1px solid var(--rule);
+  background: var(--night);
+  object-fit: contain;
+}
+
+/* Who took it, where, and when in her world time — set like the signature at
+   the head of the piece, because it is one. */
+.dispatch-plate-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 1.4rem;
+  margin-top: 0.9rem;
+}
+
+.dispatch-plate-by {
+  color: var(--member-color);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.dispatch-plate-at {
+  color: var(--muted);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
 /* --- interviews: two named people, in dialogue --------------------------- */
 
 .dialogue {
@@ -1603,6 +1742,18 @@ body.is-ready [data-reveal] {
     margin-right: 0.5rem;
   }
 
+  /* One column now, so the filing block sits above the headline. The frame
+     grows a little because it is no longer sharing the width with anything,
+     and stops well short of the full measure so the row still reads as a line
+     in a list rather than a post. */
+  .dispatch-entry-plate {
+    margin-top: 0.75rem;
+  }
+
+  .dispatch-entry-plate img {
+    max-width: min(100%, 280px);
+  }
+
   .dispatch-entry-meta {
     display: flex;
     flex-wrap: wrap;
@@ -1632,4 +1783,390 @@ body.is-ready [data-reveal] {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  /* The credit stacks rather than wrapping mid-line: a place name and a world
+     time are two facts, and a break between them should fall between them. */
+  .dispatch-plate-caption {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+
+/* ==========================================================================
+   THE FORUM
+   ==========================================================================
+
+   A clan forum, in the same room as the rest of the site: boards, threads,
+   and posts signed by the member who took the photograph. It reuses the
+   record page's chrome — `.page-record`, `.section-shell`, `.record-label`,
+   `.action` — and adds nothing to the palette. Rectangles and hairlines. No
+   avatars, no vote counts, no rounded cards; the site has exactly three
+   `border-radius` declarations and all three are dots on a map.
+
+   WHY EVERY SELECTOR BELOW IS PREFIXED WITH `.page-record`.
+   The forum's pages are written by `tools/posted.ts`. It used to link this
+   file and then emit a duplicate `<style>` block of its own after the link,
+   which won on source order; the prefix was what kept these rules on top. The
+   generator emits no styles now — this file is the only description of a post
+   there is — and the prefix stays because it is also what scopes the forum to
+   the record chrome it borrows.
+
+   TWO HOOKS ARE READ BUT NOT REQUIRED, so a page keeps its shape whether the
+   generator emits them or not:
+     [data-saber] on `.post`  — tints `--member-color`; absent, it stays
+                                `--starlight`, which is a deliberate colour
+                                here and not a failure state.
+     .post-role               — her responsibility beside her name; absent,
+                                the meta line simply has one fact fewer.
+   -------------------------------------------------------------------------- */
+
+.page-record .forum-head {
+  /* `.page-record main` has already cleared the fixed header. */
+  padding-top: 0;
+  padding-bottom: clamp(2.4rem, 6vw, 3.8rem);
+}
+
+/* `<h1>` inside `<section>` has no size of its own in this stylesheet, and the
+   UA's sectioned default is not something to inherit by accident. */
+.page-record .forum-head h1 {
+  max-width: 16ch;
+  margin-bottom: 1.4rem;
+  font-size: clamp(2.35rem, 7.6vw, 5rem);
+  text-transform: uppercase;
+}
+
+/* The breadcrumb back to the board lives inside the record label on a post
+   page, so it is underlined rather than coloured — the label is already green. */
+.page-record .forum-head .record-label a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.page-record .forum-head .record-label a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--green);
+}
+
+.page-record .forum-lead {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  overflow-wrap: break-word;
+}
+
+/* --- the boards ---------------------------------------------------------
+   A register of topics, set like the dispatch index: hairline rows, the
+   count filed right where a clerk would put it. */
+
+.page-record .topic-list {
+  display: block;
+  margin: clamp(2.2rem, 5vw, 3.2rem) 0 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+  list-style: none;
+}
+
+.page-record .topic-list > li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.page-record .topic-list a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 8rem);
+  gap: 0.4rem 2rem;
+  align-items: baseline;
+  padding: 1.5rem 0;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  transition: padding-left 240ms var(--ease-out);
+}
+
+.page-record .topic-list b {
+  grid-column: 1;
+  display: block;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  transition: color 240ms ease;
+}
+
+.page-record .topic-list a > span:not(.topic-count) {
+  grid-column: 1;
+  max-width: 56ch;
+  color: var(--muted);
+  font-size: 0.95rem;
+  overflow-wrap: break-word;
+}
+
+/* `float` would drop out of the grid and collide with a long board name. */
+.page-record .topic-list a > span.topic-count {
+  float: none;
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  align-self: start;
+  color: var(--green);
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  line-height: 1.9;
+  letter-spacing: 0.12em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+@media (hover: hover) {
+  .page-record .topic-list a:hover {
+    padding-left: 0.7rem;
+  }
+
+  .page-record .topic-list a:hover b {
+    color: var(--green);
+  }
+}
+
+/* --- a thread -----------------------------------------------------------
+   Posts read down the page as rows in a record, oldest first, separated by
+   the same hairline the dispatch list uses. The frame sits in its own column
+   beside the words on a wide screen and above them on a narrow one, and it is
+   never enlarged past the pixels the client actually captured. */
+
+.page-record .post-list {
+  display: block;
+  margin: 0 0 clamp(2.6rem, 6vw, 4rem);
+  padding: 0;
+  border-top: 1px solid var(--rule);
+  list-style: none;
+}
+
+.page-record .record-label + .post-list {
+  margin-top: 1.4rem;
+}
+
+.page-record .post {
+  --member-color: var(--starlight);
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: 1.2rem 2.4rem;
+  align-items: start;
+  padding: clamp(1.8rem, 4vw, 2.6rem) 0;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  border-radius: 0;
+  background: none;
+  overflow: visible;
+}
+
+.page-record .post[data-saber="green"] {
+  --member-color: var(--green);
+}
+
+.page-record .post[data-saber="blue"] {
+  --member-color: var(--blue);
+}
+
+/* THE FRAME. `width`/`height` on the <img> are the capture's real pixels, so
+   the ratio is known before a byte arrives and nothing below it moves. The
+   max-width is the same number: a 640-wide screenshot blown up to 1180 is a
+   worse picture, not a bigger one. */
+.page-record .post-figure {
+  max-width: min(100%, 640px);
+  margin: 0;
+  border: 1px solid var(--rule);
+  background: var(--night);
+  transition: border-color 240ms ease;
+}
+
+.page-record .post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (hover: hover) {
+  .page-record .post:hover .post-figure {
+    border-color: var(--member-color);
+  }
+}
+
+.page-record .post-body {
+  min-width: 0;
+  padding: 0;
+}
+
+/* Who, filed under what, when, and where — the attribution a forum post
+   carries inline, in the archive's own hand. */
+.page-record .post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1.2rem;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-record .post-who {
+  color: var(--member-color);
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  overflow-wrap: break-word;
+}
+
+.page-record .post-role {
+  color: var(--muted);
+}
+
+.page-record .post-tag {
+  color: var(--green);
+}
+
+.page-record .post-meta a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+.page-record .post-meta a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--rule);
+}
+
+.page-record .post-meta time {
+  font-variant-numeric: tabular-nums;
+}
+
+.page-record .post-text {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 2vw, 1.16rem);
+  line-height: 1.62;
+  overflow-wrap: break-word;
+}
+
+/* The people in the frame. Handles are unbroken strings with brackets and
+   hyphens in them, so this wraps anywhere rather than pushing the page wide. */
+.page-record .post-foot {
+  max-width: 62ch;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  overflow-wrap: break-word;
+}
+
+/* --- replies ------------------------------------------------------------
+   The reason a forum beats a broadcast: somebody else gets to answer, in the
+   thread, under the post. Indented behind one rule, names set as names. */
+
+.page-record .post-replies {
+  max-width: 62ch;
+  margin: 1.5rem 0 0;
+  padding: 0 0 0 1.2rem;
+  border-top: 0;
+  border-left: 1px solid var(--rule);
+  list-style: none;
+}
+
+.page-record .post-reply {
+  margin: 0;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.98rem;
+  overflow-wrap: break-word;
+}
+
+.page-record .post-reply:first-child {
+  padding-top: 0;
+}
+
+.page-record .post-reply:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.page-record .post-reply b {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--starlight);
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-record .forum-empty {
+  margin: 0 0 clamp(2.6rem, 6vw, 4rem);
+  padding: clamp(2rem, 5vw, 3rem) 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  /* One column. The frame leads, because the photograph is what she posted. */
+  .page-record .post {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+  }
+
+  .page-record .topic-list a {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+  }
+
+  .page-record .topic-list a > span.topic-count {
+    grid-row: auto;
+    grid-column: 1;
+    order: -1;
+    text-align: left;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-record .post-meta {
+    gap: 0.3rem 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-record .topic-list a,
+  .page-record .post-figure,
+  .page-record .post-meta a {
+    transition: none;
+  }
+}
+
+/* --- the forum, said once on the front page ------------------------------
+   Deliberately carries no post data. `tools/posted.ts` never touches
+   `index.html`, so anything quoted here would be a number that goes quietly
+   out of date; the door is the durable thing to put on the front. */
+
+.forum-call {
+  padding-block: clamp(4rem, 9vw, 8rem);
+  border-top: 1px solid var(--rule);
+}
+
+.forum-call h2 {
+  max-width: 15ch;
+}
+
+.forum-call-line {
+  max-width: 62ch;
+  margin: 0 0 2.3rem;
+  color: var(--muted);
 }

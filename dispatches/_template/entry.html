@@ -4,10 +4,17 @@
      <ol class="dispatch-list" role="list" data-dispatch-list> ... </ol> and splices that
      list between the dispatch-entries markers, replacing the empty state.
      data-saber is "green", "blue", or omitted when the member carries neither.
+     {{THUMB}} is the thumb fragment for a piece that has a photograph on the
+     site, and the empty string for one that has not. The filing column holds
+     it: a row without a picture is then exactly as tall and exactly as wide as
+     it always was, and no row's headline moves because a neighbour has one.
      ========================================================================== -->
 <li class="dispatch-entry" data-beat="{{BEAT}}" data-section="{{SECTION}}" data-saber="{{SABER}}">
   <a class="dispatch-entry-link" href="{{SLUG}}/">
-    <p class="dispatch-index"><b>{{ORDINAL}}</b> <span>{{SECTION}}</span></p>
+    <div class="dispatch-entry-file">
+      <p class="dispatch-index"><b>{{ORDINAL}}</b> <span>{{SECTION}}</span></p>
+      {{THUMB}}
+    </div>
     <div class="dispatch-entry-copy">
       <h3 class="dispatch-entry-headline">{{HEADLINE}}</h3>
       <p class="dispatch-entry-standfirst">{{STANDFIRST}}</p>

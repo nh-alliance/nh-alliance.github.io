@@ -13,6 +13,8 @@ Every page is static HTML and reads top to bottom with scripting disabled.
 | `index.html` | yes | the `dispatch-latest` region only |
 | `dispatches/index.html` | yes | the `dispatch-entries` region only |
 | `dispatches/<slug>/index.html` | no | whole file, from `_template/dispatch.html` |
+| `dispatches/<slug>/photo.jpg` | no | written only where the piece has a frame |
+| `dispatches/<slug>/plate.json` | no | the plate's words and the frame's size |
 | `sitemap.xml` | yes | the `dispatch-urls` region only |
 | `dispatches/_template/*` | yes | never |
 
@@ -69,6 +71,16 @@ Each region ships with a fallback that the first write replaces:
 | `DAY`, `PHASE` | world day and world phase |
 | `TEXT`, `ASKED`, `SAID` | one passage, and the display name of whoever spoke |
 | `CORRECTS`, `CORRECTED_BY` | the other piece's slug; `_ORDINAL` is its prefix |
+| `SRC`, `ALT` | the plate's own file name, beside the page, and its description |
+| `WIDTH`, `HEIGHT` | the frame's real pixels, read from the JPEG's own header |
+| `THUMB` | the thumb fragment, or the empty string — see **Photographs** |
+| `THUMB_SRC`, `THUMB_W`, `THUMB_H`, `THUMB_ALT` | inside the thumb fragment only |
+
+The `photo` fragment may also use any placeholder the page skeleton can. It is
+spliced into the skeleton **before** the skeleton is filled, so `{{BYLINE_NAME}}`
+and `{{DATELINE}}` written inside a figure are filled with the rest of the page.
+That is where the credit under a photograph comes from, and it is the reason
+there is no second, unwitnessed record of who took what.
 
 The byline's own site slug is deliberately not printed. There are no member
 pages yet, so a name that linked nowhere would be worse than a name.
@@ -91,6 +103,50 @@ the line — to stop a screen reader announcing "Nira: she declined to say" as
 something Nira said. The `answer` fragment carries neither: those are her
 words, typographically quoted.
 
+## Photographs
+
+A member playing Jedi Academy photographs a real moment; the client writes a
+JSON sidecar beside the JPEG; the world ingests that sidecar as an event in its
+own journal; and the piece is grounded on the event like any other claim. By
+the time a frame reaches this repository it has already been bound to the log,
+stripped of every metadata segment, and audited. Nothing here re-litigates any
+of that. What the markup owes it is three things.
+
+**A photograph is evidence, so it takes the measure of the evidence.** The
+plate sits in the body column at the same 68ch as the paragraphs around it,
+with the same hairline the rest of the record is ruled with. It is not a hero
+image and must not be allowed to become one.
+
+**Nothing moves when it loads.** `WIDTH` and `HEIGHT` are the frame's own
+pixels, read out of the JPEG's start-of-frame header rather than claimed by the
+sidecar. With `width: 100%` and `height: auto` the browser knows the ratio
+before a byte of the picture arrives and reserves the exact box. `loading="lazy"`
+and `decoding="async"` keep the picture from delaying the words, which are the
+part of the page that matters.
+
+**A dispatch without one is untouched.** The figure is emitted only where a
+plate exists AND the passage carrying its caption is in the piece, so an
+uncaptioned photograph never prints. `{{THUMB}}` is the thumb fragment for a
+piece whose frame is on the site and the empty string for every other piece —
+no empty element, no reserved column, no row moving because a neighbour has a
+picture. All ten pieces filed before there were photographs render byte for
+byte as they do today, and that is checked rather than assumed.
+
+**Alt text.** On the dispatch page it is derived from the sidecar's facts and
+describes *the frame* — who is in it, and, for a portrait, that she is facing
+the camera. It never asserts an outcome; the claims are the caption's business
+and the caption is licensed by the log. On the index thumbnail it is empty on
+purpose: that image sits inside the row's own link, whose text already names
+the piece, its section and its author, and a description there would be
+concatenated into the link's accessible name so every row announced itself
+twice.
+
+**The credit.** `Photographed by {{BYLINE_NAME}}` and `{{DATELINE}}` — who took
+it, where, and when in her world time — set in the same type as the signature
+at the head of the piece, because it is one. Her name carries her saber tint
+through the inherited `--member-color`, exactly as it does in the signature and
+in the index.
+
 ## Rules the markup enforces
 
 - **Individual bylines.** One name per page, in the head and again in the
@@ -112,10 +168,15 @@ words, typographically quoted.
 
 Verified with zero horizontal overflow at 320, 360, 390, 430, 620, 768, 900,
 1024, 1280, and 1600 — measured against real pages, including one whose
-standfirst carries a 37-character handle. Keep it that way:
+standfirst carries a 37-character handle, and re-measured at 390, 768 and 1440
+against a real dispatch carrying a 1920x1080 photograph and an index carrying
+its thumbnail. Keep it that way:
 
 - no `100vw` anywhere — use `--content`, `100%`, or `min()`;
 - every grid track is `minmax(0, …)`, never a bare `1fr`;
+- an image is `width: 100%; height: auto` inside a column that is already
+  bounded. It never carries a pixel width in CSS, and its `max-width` caps are
+  in the thumbnail only, where the picture is a mark rather than the subject;
 - long unbroken strings need `overflow-wrap: break-word`. This is the rule that
   breaks first. A third party's handle is one token and can be arbitrarily
   long, and it reaches `HEADLINE`, `STANDFIRST`, `ASKED`, `SAID`, and body text

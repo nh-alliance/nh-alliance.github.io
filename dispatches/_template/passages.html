@@ -12,6 +12,43 @@
 <!-- p: "body" -->
 <p>{{TEXT}}</p>
 
+<!-- p: "photo" — THE PLATE. A photograph one of them took, exhibited with the
+     line she wrote about it. The renderer places this figure immediately
+     BEFORE the passage that carries its caption, once, and never at all when
+     that line is not in the piece: an uncaptioned photograph does not print.
+
+     SRC is relative and same-directory by contract — ./photo.jpg, beside the
+     page. WIDTH and HEIGHT are the frame's real pixels, read from the JPEG's
+     own header, so the box is reserved before the bytes arrive and nothing
+     under the picture moves when it loads. ALT is derived from the sidecar and
+     describes the FRAME; it never asserts an outcome the words did not.
+
+     BYLINE_NAME and DATELINE are the page's own placeholders. A figure may use
+     any of them: this fragment is spliced into the skeleton before the
+     skeleton is filled. That is where the credit line comes from — the
+     photographer, her place, and her world time — with no second source of
+     truth about who took what. -->
+<figure class="dispatch-plate">
+  <img class="dispatch-plate-frame" src="{{SRC}}" alt="{{ALT}}" width="{{WIDTH}}" height="{{HEIGHT}}" loading="lazy" decoding="async">
+  <figcaption class="dispatch-plate-caption">
+    <span class="dispatch-plate-by">Photographed by {{BYLINE_NAME}}</span>
+    <span class="dispatch-plate-at">{{DATELINE}}</span>
+  </figcaption>
+</figure>
+
+<!-- p: "thumb" — THE INDEX THUMBNAIL. Substituted for {{THUMB}} in entry.html
+     for a piece whose frame is really on the site, and replaced by nothing at
+     all for every other piece, so a record of pieces without photographs is
+     byte for byte the one this site served before there were any.
+
+     alt is EMPTY on purpose. This image sits inside the row's own link, whose
+     text already names the piece, its section and its author; a description
+     here would be concatenated into that link's accessible name and every row
+     would announce itself twice. The frame's real description is on the
+     dispatch page, where the photograph is the subject rather than a
+     wayfinding mark. {{THUMB_ALT}} is available if that ever changes. -->
+<span class="dispatch-entry-plate"><img src="{{THUMB_SRC}}" alt="" width="{{THUMB_W}}" height="{{THUMB_H}}" loading="lazy" decoding="async"></span>
+
 <!-- p: "rule" -->
 <hr class="dispatch-rule">
 

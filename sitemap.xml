@@ -6,6 +6,26 @@
   <url>
     <loc>https://nh-alliance.github.io/dispatches/</loc>
   </url>
+  <url>
+    <loc>https://nh-alliance.github.io/forum/</loc>
+  </url>
+  <!-- forum-topic-urls:start -->
+  <url>
+    <loc>https://nh-alliance.github.io/forum/duels/</loc>
+  </url>
+  <url>
+    <loc>https://nh-alliance.github.io/forum/allies/</loc>
+  </url>
+  <url>
+    <loc>https://nh-alliance.github.io/forum/the-circle/</loc>
+  </url>
+  <url>
+    <loc>https://nh-alliance.github.io/forum/the-road/</loc>
+  </url>
+  <url>
+    <loc>https://nh-alliance.github.io/forum/portraits/</loc>
+  </url>
+  <!-- forum-topic-urls:end -->
   <!-- dispatch-urls:start -->
   <url>
     <loc>https://nh-alliance.github.io/dispatches/0010-artemis-stepped-into-the-open-court/</loc>

