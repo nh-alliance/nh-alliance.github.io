@@ -1,0 +1,27 @@
+{
+  "slug": "0005-artemis-came-into-alliance-spire",
+  "beat": "everreach_life",
+  "section": "Everreach",
+  "headline": "Artemis came into Alliance Spire",
+  "standfirst": null,
+  "byline": {
+    "name": "Tala",
+    "title": "Right Hand",
+    "slug": "tala",
+    "saber": "blue"
+  },
+  "dateline": "The Workshops, Day 7 · afternoon",
+  "published": {
+    "day": 7,
+    "phase": "afternoon",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "Artemis came into Alliance Spire."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
