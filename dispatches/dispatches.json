@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0010-artemis-stepped-into-the-open-court",
+      "beat": "everreach_life",
+      "section": "Everreach",
+      "headline": "Artemis stepped into The Open Court.",
+      "standfirst": "It had been 35 hours since Adara last had her in view.",
+      "byline": {
+        "name": "Adara",
+        "title": "Voice",
+        "slug": "adara",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 14,
+        "phase": "deepnight",
+        "date": "2026-09-01"
+      }
+    },
+    {
       "slug": "0009-artemis-lost-to-adara",
       "beat": "interview",
       "section": "Interviews",
@@ -164,8 +182,8 @@
     }
   ],
   "beats": [
-    "interview",
     "everreach_life",
+    "interview",
     "open_court"
   ]
 }

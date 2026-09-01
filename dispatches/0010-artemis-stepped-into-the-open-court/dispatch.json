@@ -1,0 +1,31 @@
+{
+  "slug": "0010-artemis-stepped-into-the-open-court",
+  "beat": "everreach_life",
+  "section": "Everreach",
+  "headline": "Artemis stepped into The Open Court.",
+  "standfirst": "It had been 35 hours since Adara last had her in view.",
+  "byline": {
+    "name": "Adara",
+    "title": "Voice",
+    "slug": "adara",
+    "saber": "blue"
+  },
+  "dateline": "The Open Court, Day 14 · deepnight",
+  "published": {
+    "day": 14,
+    "phase": "deepnight",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "Artemis came into The Open Court. It had been thirty-five hours since I last saw her, and the silence here felt heavy enough to break."
+    },
+    {
+      "p": "body",
+      "text": "There is more to ask here, and I intend to ask it."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
