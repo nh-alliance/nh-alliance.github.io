@@ -1,0 +1,54 @@
+{
+  "slug": "0006-artemis-and-adara-drew",
+  "beat": "open_court",
+  "section": "The Open Court",
+  "headline": "Artemis and Adara drew",
+  "standfirst": "Neither of them took it.",
+  "byline": {
+    "name": "Artemis",
+    "title": "Leader",
+    "slug": "artemis",
+    "saber": "green"
+  },
+  "dateline": "Stillwood, Day 8 · evening",
+  "published": {
+    "day": 8,
+    "phase": "evening",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "Adara and I drew. Neither of them took it."
+    },
+    {
+      "p": "body",
+      "text": "I challenged Adara."
+    },
+    {
+      "p": "body",
+      "text": "Adara declined Artemis: it crossed a line she keeps."
+    },
+    {
+      "p": "body",
+      "text": "Adara agreed to face Artemis."
+    },
+    {
+      "p": "body",
+      "text": "Adara and I crossed blades."
+    },
+    {
+      "p": "body",
+      "text": "Adara and Artemis traded again."
+    },
+    {
+      "p": "rule"
+    },
+    {
+      "p": "body",
+      "text": "I will not tell it a second time."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
