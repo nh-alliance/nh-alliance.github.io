@@ -1,0 +1,27 @@
+{
+  "slug": "0002-tala-did-not-finish-what-was-started-at-the",
+  "beat": "everreach_life",
+  "section": "Everreach",
+  "headline": "Tala did not finish what was started at The Open Court",
+  "standfirst": null,
+  "byline": {
+    "name": "Tala",
+    "title": "Right Hand",
+    "slug": "tala",
+    "saber": "blue"
+  },
+  "dateline": "The Open Court, Day 6 · afternoon",
+  "published": {
+    "day": 6,
+    "phase": "afternoon",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "I did not finish what was started at The Open Court."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
