@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0008-artemis-came-into-the-long-causeway",
+      "beat": "everreach_life",
+      "section": "Everreach",
+      "headline": "Artemis came into The Long Causeway",
+      "standfirst": null,
+      "byline": {
+        "name": "Tala",
+        "title": "Right Hand",
+        "slug": "tala",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 9,
+        "phase": "deepnight",
+        "date": "2026-09-01"
+      }
+    },
+    {
       "slug": "0007-tala-did-not-finish-what-was-started-at-the",
       "beat": "everreach_life",
       "section": "Everreach",
