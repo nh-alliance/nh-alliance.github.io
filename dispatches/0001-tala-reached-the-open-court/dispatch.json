@@ -1,0 +1,44 @@
+{
+  "slug": "0001-tala-reached-the-open-court",
+  "beat": "interview",
+  "section": "Interviews",
+  "headline": "Tala reached The Open Court",
+  "standfirst": null,
+  "byline": {
+    "name": "Adara",
+    "title": "Voice",
+    "slug": "adara",
+    "saber": "blue"
+  },
+  "dateline": "The Open Court, Day 6 · highsun",
+  "published": {
+    "day": 6,
+    "phase": "highsun",
+    "date": "2026-09-01"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "Tala reached The Open Court."
+    },
+    {
+      "p": "question",
+      "asked": "Adara",
+      "text": "What was it like getting there?"
+    },
+    {
+      "p": "answer",
+      "said": "Tala",
+      "text": "“I remember it.”"
+    },
+    {
+      "p": "rule"
+    },
+    {
+      "p": "body",
+      "text": "I put the question. This is the answer I was given."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
