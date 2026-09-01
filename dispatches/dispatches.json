@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0007-tala-did-not-finish-what-was-started-at-the",
+      "beat": "everreach_life",
+      "section": "Everreach",
+      "headline": "Tala did not finish what was started at The Open Court",
+      "standfirst": null,
+      "byline": {
+        "name": "Tala",
+        "title": "Right Hand",
+        "slug": "tala",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 8,
+        "phase": "nightfall",
+        "date": "2026-09-01"
+      }
+    },
+    {
       "slug": "0006-artemis-and-adara-drew",
       "beat": "open_court",
       "section": "The Open Court",
@@ -110,8 +128,8 @@
     }
   ],
   "beats": [
-    "open_court",
     "everreach_life",
+    "open_court",
     "interview"
   ]
 }
