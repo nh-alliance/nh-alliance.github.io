@@ -3,9 +3,30 @@
   "slug": "portraits",
   "title": "Portraits",
   "blurb": "The camera turned around.",
-  "count": 2,
-  "posts": 2,
+  "count": 3,
+  "posts": 3,
   "threads": [
+    {
+      "slug": "1788310008-tala-selfie",
+      "title": "Portrait on t2_rancor",
+      "author": "Tala",
+      "moment": "selfie",
+      "capturedAt": "2026-09-02T00:46:48.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:46:48.000Z",
+      "lastBy": "Tala",
+      "text": "Camera turned around on t2_rancor, [NHA]Artemis and Leader and allahu snackbar and pãodawan in the room.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Artemis",
+        "Leader",
+        "allahu snackbar",
+        "pãodawan"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788310008-tala-selfie/photo.jpg",
+      "href": "1788310008-tala-selfie/"
+    },
     {
       "slug": "1788308451-artemis-selfie",
       "title": "Portrait on t2_rancor",

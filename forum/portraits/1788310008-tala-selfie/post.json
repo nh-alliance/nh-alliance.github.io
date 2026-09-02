@@ -1,0 +1,37 @@
+{
+  "schema": "nha.post.v1",
+  "id": "portraits/1788310008-tala-selfie",
+  "topic": "portraits",
+  "slug": "1788310008-tala-selfie",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "selfie",
+  "momentDetail": null,
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Artemis",
+    "Leader",
+    "allahu snackbar",
+    "pãodawan"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-02T00:46:48.000Z",
+  "postedAt": "2026-09-02T00:52:34.224Z",
+  "text": "Camera turned around on t2_rancor, [NHA]Artemis and Leader and allahu snackbar and pãodawan in the room.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala, facing the camera, with [NHA]Artemis, Leader, allahu snackbar, and pãodawan behind her.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
