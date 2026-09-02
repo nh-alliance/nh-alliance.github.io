@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-circle/1788308271-tala-clan",
+  "topic": "the-circle",
+  "slug": "1788308271-tala-clan",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "clan",
+  "momentDetail": null,
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Artemis",
+    "Padawan"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-02T00:17:51.000Z",
+  "postedAt": "2026-09-02T00:30:34.892Z",
+  "text": "The Circle on t2_rancor, with [NHA]Artemis and Padawan. Recorded.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala standing with [NHA]Artemis and Padawan.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}

