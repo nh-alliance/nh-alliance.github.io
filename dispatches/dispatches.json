@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0011-artemis-reached-the-open-court-as-i-saw-it",
+      "beat": "interview",
+      "section": "Interviews",
+      "headline": "Artemis reached The Open Court, as I saw it unfold.",
+      "standfirst": null,
+      "byline": {
+        "name": "Adara",
+        "title": "Voice",
+        "slug": "adara",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 14,
+        "phase": "afternoon",
+        "date": "2026-09-02"
+      }
+    },
+    {
       "slug": "0010-artemis-stepped-into-the-open-court",
       "beat": "everreach_life",
       "section": "Everreach",
@@ -182,8 +200,8 @@
     }
   ],
   "beats": [
-    "everreach_life",
     "interview",
+    "everreach_life",
     "open_court"
   ]
 }
