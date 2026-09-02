@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0012-i-saw-artemis-reach-the-open-court",
+      "beat": "interview",
+      "section": "Interviews",
+      "headline": "I saw Artemis reach The Open Court.",
+      "standfirst": null,
+      "byline": {
+        "name": "Adara",
+        "title": "Voice",
+        "slug": "adara",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 14,
+        "phase": "duskfall",
+        "date": "2026-09-02"
+      }
+    },
+    {
       "slug": "0011-artemis-reached-the-open-court-as-i-saw-it",
       "beat": "interview",
       "section": "Interviews",

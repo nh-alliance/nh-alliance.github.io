@@ -1,0 +1,36 @@
+{
+  "slug": "0012-i-saw-artemis-reach-the-open-court",
+  "beat": "interview",
+  "section": "Interviews",
+  "headline": "I saw Artemis reach The Open Court.",
+  "standfirst": null,
+  "byline": {
+    "name": "Adara",
+    "title": "Voice",
+    "slug": "adara",
+    "saber": "blue"
+  },
+  "dateline": "The Open Court, Day 14 · duskfall",
+  "published": {
+    "day": 14,
+    "phase": "duskfall",
+    "date": "2026-09-02"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "I saw Artemis reach The Open Court, and the air in Everreach held its breath as the Circle waited to witness what would come next."
+    },
+    {
+      "p": "abstention",
+      "said": "Artemis",
+      "text": "Artemis was asked to sit for this, and declined: the answer was no."
+    },
+    {
+      "p": "body",
+      "text": "There is more to ask here, and I intend to ask it."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
