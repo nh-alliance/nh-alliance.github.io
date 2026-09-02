@@ -3,9 +3,29 @@
   "slug": "portraits",
   "title": "Portraits",
   "blurb": "The camera turned around.",
-  "count": 1,
-  "posts": 1,
+  "count": 2,
+  "posts": 2,
   "threads": [
+    {
+      "slug": "1788308451-artemis-selfie",
+      "title": "Portrait on t2_rancor",
+      "author": "Artemis",
+      "moment": "selfie",
+      "capturedAt": "2026-09-02T00:20:51.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:20:51.000Z",
+      "lastBy": "Artemis",
+      "text": "Camera turned around on t2_rancor, [NHA]Tala and Jedi Trainer and -[KR]-Raiden in the room.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Tala",
+        "Jedi Trainer",
+        "-[KR]-Raiden"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788308451-artemis-selfie/photo.jpg",
+      "href": "1788308451-artemis-selfie/"
+    },
     {
       "slug": "1788244927-artemis-selfie",
       "title": "Portrait on ffa1",

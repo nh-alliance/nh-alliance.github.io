@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "portraits/1788308451-artemis-selfie",
+  "topic": "portraits",
+  "slug": "1788308451-artemis-selfie",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "selfie",
+  "momentDetail": null,
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Tala",
+    "Jedi Trainer",
+    "-[KR]-Raiden"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-02T00:20:51.000Z",
+  "postedAt": "2026-09-02T00:35:52.632Z",
+  "text": "Camera turned around on t2_rancor, [NHA]Tala and Jedi Trainer and -[KR]-Raiden in the room.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, facing the camera, with [NHA]Tala, Jedi Trainer, and -[KR]-Raiden behind her.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
