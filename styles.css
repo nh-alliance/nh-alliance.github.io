@@ -2769,17 +2769,71 @@ body.is-ready [data-reveal] {
    `index.html`, so anything quoted here would be a number that goes quietly
    out of date; the door is the durable thing to put on the front. */
 
+/*
+ * The section that stands where the dispatches used to. It was the one
+ * heading block on the page that was not a two-column grid: a 15ch heading
+ * stacked over a 62ch line, both hard left in an 1180px shell, with the whole
+ * right half empty. `.world-heading` and `.circle-heading` had already settled
+ * what a section opening looks like here, so this follows them rather than
+ * inventing a third shape.
+ */
 .forum-call {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 5rem;
+  align-items: end;
   padding-block: clamp(4rem, 9vw, 8rem);
   border-top: 1px solid var(--rule);
 }
 
+.forum-call .record-label {
+  grid-column: 1 / -1;
+}
+
+/* Spans both rows of its column so it sits level with the foot of the prose,
+   which is what `align-items: end` does for the two headings above. */
 .forum-call h2 {
-  max-width: 15ch;
+  grid-column: 1;
+  grid-row: 2 / 4;
+  align-self: end;
+  max-width: 11ch;
+  margin-bottom: 0;
 }
 
 .forum-call-line {
-  max-width: 62ch;
-  margin: 0 0 2.3rem;
+  grid-column: 2;
+  max-width: 52ch;
+  margin: 0 0 1.8rem;
   color: var(--muted);
+}
+
+.forum-call .action {
+  grid-column: 2;
+  justify-self: start;
+}
+
+/*
+ * The stacking rule lives HERE, not in the @media block near the top of this
+ * file, because that block is declared before `.forum-call` is: at equal
+ * specificity the later rule wins and the section stayed in two columns on a
+ * phone. `.circle-heading` gets away with it only because it is defined above
+ * that block.
+ */
+@media (max-width: 900px) {
+  .forum-call {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .forum-call h2,
+  .forum-call-line,
+  .forum-call .action {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .forum-call h2 {
+    max-width: 15ch;
+    margin-bottom: 1.5rem;
+  }
 }
