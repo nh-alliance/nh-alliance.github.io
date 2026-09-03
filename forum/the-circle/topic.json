@@ -3,9 +3,27 @@
   "slug": "the-circle",
   "title": "The Circle together",
   "blurb": "Frames taken when more than one of us was in the room.",
-  "count": 3,
-  "posts": 4,
+  "count": 4,
+  "posts": 5,
   "threads": [
+    {
+      "slug": "1788415531-tala-clan",
+      "title": "Standing with [NHA]Artemis",
+      "author": "Tala",
+      "moment": "clan",
+      "capturedAt": "2026-09-03T06:05:31.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-03T06:05:31.000Z",
+      "lastBy": "Tala",
+      "text": "The Circle on ffa3, with [NHA]Artemis. Recorded.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Artemis"
+      ],
+      "map": "ffa3",
+      "photo": "1788415531-tala-clan/photo.jpg",
+      "href": "1788415531-tala-clan/"
+    },
     {
       "slug": "1788308271-tala-clan",
       "title": "Standing with [NHA]Artemis and Padawan",
