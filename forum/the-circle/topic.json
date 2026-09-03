@@ -3,8 +3,8 @@
   "slug": "the-circle",
   "title": "The Circle together",
   "blurb": "Frames taken when more than one of us was in the room.",
-  "count": 4,
-  "posts": 5,
+  "count": 5,
+  "posts": 6,
   "threads": [
     {
       "slug": "1788415531-tala-clan",
@@ -23,6 +23,25 @@
       "map": "ffa3",
       "photo": "1788415531-tala-clan/photo.jpg",
       "href": "1788415531-tala-clan/"
+    },
+    {
+      "slug": "1788310017-raiden-the-circle",
+      "title": "Chillin with my girls",
+      "author": "-[KR]-Raiden",
+      "moment": "clan",
+      "capturedAt": "2026-09-03T03:06:57Z",
+      "replies": 0,
+      "lastAt": "2026-09-03T03:06:57.000Z",
+      "lastBy": "-[KR]-Raiden",
+      "text": "Chillin with my girls, watching them grow and build from scratch their history brick by brick. What started as a what if, turned into a wonderful experience! Love yall <3",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Artemis",
+        "[NHA]Tala"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788310017-raiden-the-circle/photo.jpg",
+      "href": "1788310017-raiden-the-circle/"
     },
     {
       "slug": "1788308271-tala-clan",

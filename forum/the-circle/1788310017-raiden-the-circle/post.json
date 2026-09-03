@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "1788310017-raiden-the-circle",
+  "topic": "the-circle",
+  "slug": "1788310017-raiden-the-circle",
+  "author": {
+    "key": "raiden",
+    "name": "-[KR]-Raiden",
+    "title": "First Ally",
+    "saber": "red",
+    "handle": "-[KR]-Raiden"
+  },
+  "moment": "clan",
+  "momentDetail": null,
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Artemis",
+    "[NHA]Tala"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-03T03:06:57Z",
+  "postedAt": "2026-09-03T03:26:57Z",
+  "text": "Chillin with my girls, watching them grow and build from scratch their history brick by brick. What started as a what if, turned into a wonderful experience! Love yall <3",
+  "voice": {
+    "source": "human",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "-[KR]-Raiden standing with [NHA]Artemis and [NHA]Tala.",
+    "width": 1920,
+    "height": 1241
+  },
+  "replies": [],
+  "title": "Chillin with my girls"
+}
