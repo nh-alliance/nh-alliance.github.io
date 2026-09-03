@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "slug": "0013-artemis-stood-before-the-open-court",
+      "beat": "interview",
+      "section": "Interviews",
+      "headline": "Artemis stood before The Open Court.",
+      "standfirst": null,
+      "byline": {
+        "name": "Adara",
+        "title": "Voice",
+        "slug": "adara",
+        "saber": "blue"
+      },
+      "published": {
+        "day": 15,
+        "phase": "deepnight",
+        "date": "2026-09-03"
+      }
+    },
+    {
       "slug": "0012-i-saw-artemis-reach-the-open-court",
       "beat": "interview",
       "section": "Interviews",

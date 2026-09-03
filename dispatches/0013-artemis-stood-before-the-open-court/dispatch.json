@@ -1,0 +1,36 @@
+{
+  "slug": "0013-artemis-stood-before-the-open-court",
+  "beat": "interview",
+  "section": "Interviews",
+  "headline": "Artemis stood before The Open Court.",
+  "standfirst": null,
+  "byline": {
+    "name": "Adara",
+    "title": "Voice",
+    "slug": "adara",
+    "saber": "blue"
+  },
+  "dateline": "The Open Court, Day 15 · deepnight",
+  "published": {
+    "day": 15,
+    "phase": "deepnight",
+    "date": "2026-09-03"
+  },
+  "body": [
+    {
+      "p": "lede",
+      "text": "Artemis reached The Open Court, and I saw it happen with my own eyes."
+    },
+    {
+      "p": "abstention",
+      "said": "Artemis",
+      "text": "Artemis was asked to sit for this, and declined: the answer was no."
+    },
+    {
+      "p": "body",
+      "text": "There is more to ask here, and I intend to ask it."
+    }
+  ],
+  "corrects": null,
+  "correctedBy": []
+}
