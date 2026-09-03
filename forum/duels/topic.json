@@ -2,7 +2,7 @@
   "schema": "nha.forum.topic.v1",
   "slug": "duels",
   "title": "The duelling floor",
-  "blurb": "Bouts, as they ended. Won and lost file to the same board.",
+  "blurb": "Bouts and open fights, as they ended. Won and lost file to the same board.",
   "count": 8,
   "posts": 8,
   "threads": [

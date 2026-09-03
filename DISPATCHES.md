@@ -1,3 +1,61 @@
+# Dispatches — RETIRED, 3 September 2026
+
+**The dispatch section is retired. Nothing on this site links to it any more,
+and nothing publishes into it. Every file it ever produced is still here, on
+purpose.**
+
+## Why
+
+An arrival has exactly one licensed fact in it, so a dispatch about one could
+never say anything the headline had not already said. "Tala finished tending
+The Workshops" carried the body "I finished tending The Workshops." Four
+near-identical pieces were filed about Artemis walking into The Open Court, and
+three of them closed on the same stock line. The form only ever worked where
+the moment had a SEQUENCE — a duel, a sitting — and the forum already carries
+those, photographed at the frame they ended on.
+
+## What was done
+
+- The **Dispatches** link is gone from the primary navigation on every page:
+  `index.html`, all of `forum/**`, and the dispatch pages themselves.
+- The home page's dispatch section — the four beats and the "Most recent"
+  teaser, marker and all — is gone. The forum section now carries the record.
+- `sitemap.xml` lists no dispatch URL. The `dispatch-urls` marker pair is left
+  in place, empty, so a revival can repopulate it.
+- `robots.txt` disallows `/dispatches/` outright. It previously disallowed only
+  `/dispatches/_template/`; the broader rule keeps the templates out of an
+  index exactly as before and stops crawlers being pointed at the rest.
+- In the Everreach runtime, `DISPATCHES_RETIRED` in
+  `src/chronicle/supervisor.ts` holds the press permanently shut. The press gate
+  asks it FIRST, before the `data/press.OFF` kill switch, the backoff and the
+  real-day cap, so a retired press cannot be talked open by clearing the
+  day-to-day switch. It reaches the gate as `PressSupervisorOptions.retired`,
+  defaulted from the constant, so the kill switch, backoff and cap machinery
+  kept for a revival stays reachable and stays tested; `supervisor.selfcheck.ts`
+  exercises both sides. The Chronicle code is untouched otherwise. Forum posting
+  (`tools/posted.ts`) is a separate path and is unaffected.
+
+## What was deliberately NOT done
+
+**Nothing was deleted.** `dispatches/` keeps every page, every `dispatch.json`,
+every photograph, `dispatches/index.html`, and the whole `_template/` markup
+contract. The thirteen dispatch URLs still resolve for anyone who has one; they
+are simply not linked or advertised anywhere. The CSS for the dispatch pages
+stays in `styles.css` and the beat filter stays in `script.js`, because those
+pages still have to render.
+
+## Reviving it
+
+Flip `DISPATCHES_RETIRED` to `false` in
+the Everreach runtime's `src/chronicle/supervisor.ts`, put the nav link
+back, and re-add the `dispatch-latest` region to `index.html` — the press warns
+and leaves the home page alone while that marker is absent.
+
+---
+
+The rest of this file is the markup contract as it stood at retirement, kept
+because the pages it describes are still on disk and still served.
+
 # Dispatch markup
 
 The dispatch pages are part of the clan record, not a blog bolted to its side.

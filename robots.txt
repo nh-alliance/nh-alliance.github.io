@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /dispatches/_template/
+Disallow: /dispatches/
 
 Sitemap: https://nh-alliance.github.io/sitemap.xml

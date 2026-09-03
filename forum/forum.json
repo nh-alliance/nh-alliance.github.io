@@ -1,11 +1,11 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-03T06:27:57.294Z",
+  "updated": "2026-09-03T06:41:48.554Z",
   "boards": [
     {
       "slug": "duels",
       "title": "The duelling floor",
-      "blurb": "Bouts, as they ended. Won and lost file to the same board.",
+      "blurb": "Bouts and open fights, as they ended. Won and lost file to the same board.",
       "threads": 8,
       "posts": 8,
       "href": "duels/"
