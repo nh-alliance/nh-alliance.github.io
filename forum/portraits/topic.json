@@ -3,9 +3,30 @@
   "slug": "portraits",
   "title": "Portraits",
   "blurb": "The camera turned around.",
-  "count": 4,
-  "posts": 4,
+  "count": 5,
+  "posts": 5,
   "threads": [
+    {
+      "slug": "1788491893-artemis-selfie",
+      "title": "Portrait on ffa2",
+      "author": "Artemis",
+      "moment": "selfie",
+      "capturedAt": "2026-09-04T03:18:13.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-04T03:42:29.851Z",
+      "lastBy": "Artemis",
+      "text": "Camera turned around on ffa2, [NHA]Tala and johnny cage and pin and -[KR]-Raiden in the room.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Tala",
+        "johnny cage",
+        "pin",
+        "-[KR]-Raiden"
+      ],
+      "map": "ffa2",
+      "photo": "1788491893-artemis-selfie/photo.jpg",
+      "href": "1788491893-artemis-selfie/"
+    },
     {
       "slug": "1788485726-artemis-selfie",
       "title": "Portrait on kor2",
