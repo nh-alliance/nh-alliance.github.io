@@ -2837,3 +2837,17 @@ body.is-ready [data-reveal] {
     margin-bottom: 1.5rem;
   }
 }
+
+/* ---- forum profile pictures (2026-09-06) --------------------------------
+   The portrait sits above the poster's name in the thread sidebar. Model
+   icons are 64px squares out of the game's own pk3s, so they are rendered
+   at native size with the same corner treatment as the photographs. */
+.fpost-avatar {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 0 .55rem;
+  border-radius: 6px;
+  border: 1px solid rgba(140, 168, 200, .28);
+  image-rendering: auto;
+}
