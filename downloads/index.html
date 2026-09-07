@@ -2,60 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080a09">
-  <title>Downloads — NHA</title>
   <meta name="description" content="Maps and files of the Neo-Human Alliance. Everreach, the clan home, ready to install.">
-  <link rel="stylesheet" href="../styles.css">
+  <meta property="og:title" content="Downloads">
+  <meta property="og:description" content="Everreach, the NHA clan home, ready to install.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nh-alliance.github.io/downloads/">
+  <link rel="canonical" href="https://nh-alliance.github.io/downloads/">
   <link rel="icon" href="../assets/nha-sigil.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&amp;family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Downloads // Neo-Human Alliance</title>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="../"><img src="../assets/nha-sigil.svg" alt="" width="34" height="34"><span>NHA</span></a>
-    <nav class="site-nav" aria-label="Primary navigation">
+<body class="page-record">
+  <a class="skip-link" href="#main">Skip to downloads</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="../" aria-label="Neo-Human Alliance home">
+      <img src="../assets/nha-sigil.svg" alt="" width="42" height="42">
+      <span>NHA</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span><span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
       <a href="../#clan">The clan</a>
       <a href="../#everreach">Everreach</a>
       <a href="../#circle">The Circle</a>
       <a href="../forum/">Forum</a>
+      <a href="./" aria-current="page">Downloads</a>
       <a href="../#code">Our code</a>
     </nav>
   </header>
 
-  <main class="page-record">
-    <section>
-      <p class="record-label">Downloads</p>
+  <main id="main">
+    <section class="section-shell forum-head is-index">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="../">Neo-Human Alliance</a></li>
+          <li><span aria-current="page">Downloads</span></li>
+        </ol>
+      </nav>
       <h1>Take the home with you</h1>
-      <p>Everything here was made by the Alliance, for the Alliance. Our map
-      packages carry only our own work &mdash; geometry, textures, and art we
-      built ourselves. You need Jedi Academy multiplayer (OpenJK recommended)
-      to play.</p>
+      <p class="forum-lead">Everything here was made by the Alliance, for the Alliance.
+      Our packages carry only our own work &mdash; geometry, textures, and art we built
+      ourselves. You need Jedi Academy multiplayer (OpenJK recommended) to play.</p>
+    </section>
 
-      <h2>Everreach &mdash; NHA Home</h2>
-      <p><b>nha_home</b> &mdash; the clan seat. The Great Hall with the Circle's
-      emblem inlaid in its floor, the Memory Gallery bearing the eight names,
-      two duelling floors, quarters for every member, and at least one thing
+    <section class="section-shell forum-section">
+      <h2 class="forum-h2">Everreach &mdash; NHA Home</h2>
+      <p class="forum-lead"><b>nha_home</b> &mdash; the clan seat. The Great Hall with
+      the Circle's emblem inlaid in its floor, the Memory Gallery bearing the eight
+      names, two duelling floors, quarters for every member, and at least one thing
       you will not find on your first visit.</p>
-      <p>
-        <a href="../assets/downloads/nha_home.pk3" download><b>Download nha_home.pk3</b></a>
-        (about 3&nbsp;MB)
+      <p class="forum-lead">
+        <a href="../assets/downloads/nha_home.pk3" download><b>&darr;&nbsp;Download nha_home.pk3</b></a>
+        &nbsp;&middot;&nbsp; about 3&nbsp;MB
       </p>
+    </section>
 
-      <h3>How to install</h3>
-      <ol>
+    <section class="section-shell forum-section">
+      <h2 class="forum-h2">How to install</h2>
+      <ol class="forum-lead">
         <li>Download <code>nha_home.pk3</code>.</li>
-        <li>Drop it into your game's <code>base</code> folder:<br>
-          <code>&hellip;/Jedi Academy/GameData/base/</code> (Windows)<br>
-          <code>~/Library/Application Support/OpenJK/base/</code> (Mac, OpenJK)</li>
-        <li>Restart the game. The map appears in Create&nbsp;Server as
-          <b>Everreach&nbsp;- NHA&nbsp;Home</b>, or load it from the console:
-          <code>/map nha_home</code>.</li>
+        <li>Drop it into your game's <code>base</code> folder &mdash;
+          Windows: <code>&hellip;\GameData\base\</code> &nbsp;&middot;&nbsp;
+          Mac (OpenJK): <code>~/Library/Application&nbsp;Support/OpenJK/base/</code></li>
+        <li>Restart the game. Find <b>Everreach&nbsp;- NHA&nbsp;Home</b> in
+          Create&nbsp;Server, or open the console and type <code>/map&nbsp;nha_home</code>.</li>
       </ol>
-
-      <p>Joining our server instead? It offers the map automatically when you
-      connect &mdash; but the in-game transfer is slow, so grabbing the file
+      <p class="forum-lead">Joining our server instead? It offers the map automatically
+      when you connect &mdash; but the in-game transfer is slow, so grabbing the file
       here first is the fast way in.</p>
-
-      <p class="record-label">Built by Kaia for the Neo-Human Alliance.</p>
+      <p class="forum-foot">Built by Kaia for the Neo-Human Alliance.</p>
     </section>
   </main>
 </body>
