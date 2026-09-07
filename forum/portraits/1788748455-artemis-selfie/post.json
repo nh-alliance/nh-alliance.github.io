@@ -1,0 +1,36 @@
+{
+  "schema": "nha.post.v1",
+  "id": "portraits/1788748455-artemis-selfie",
+  "topic": "portraits",
+  "slug": "1788748455-artemis-selfie",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "selfie",
+  "momentDetail": null,
+  "opponent": null,
+  "witnesses": [
+    "(JAWA)IniRoundabout",
+    "MaryJane",
+    "UHoP-Hávarðr-H"
+  ],
+  "map": "kor2",
+  "capturedAt": "2026-09-07T02:34:15.000Z",
+  "postedAt": "2026-09-07T02:40:09.913Z",
+  "text": "Camera turned around on kor2, (JAWA)IniRoundabout and MaryJane and UHoP-Hávarðr-H in the room.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, facing the camera, with (JAWA)IniRoundabout, MaryJane, and UHoP-Hávarðr-H behind her.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}

@@ -3,9 +3,29 @@
   "slug": "portraits",
   "title": "Portraits",
   "blurb": "The camera turned around.",
-  "count": 7,
-  "posts": 7,
+  "count": 8,
+  "posts": 8,
   "threads": [
+    {
+      "slug": "1788748455-artemis-selfie",
+      "title": "Portrait on kor2",
+      "author": "Artemis",
+      "moment": "selfie",
+      "capturedAt": "2026-09-07T02:34:15.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-07T02:40:09.913Z",
+      "lastBy": "Artemis",
+      "text": "Camera turned around on kor2, (JAWA)IniRoundabout and MaryJane and UHoP-Hávarðr-H in the room.",
+      "opponent": null,
+      "witnesses": [
+        "(JAWA)IniRoundabout",
+        "MaryJane",
+        "UHoP-Hávarðr-H"
+      ],
+      "map": "kor2",
+      "photo": "1788748455-artemis-selfie/photo.jpg",
+      "href": "1788748455-artemis-selfie/"
+    },
     {
       "slug": "1788683704-kaia-selfie",
       "title": "Portrait on nha_home",
